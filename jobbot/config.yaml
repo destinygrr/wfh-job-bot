@@ -1,0 +1,133 @@
+# ============================================================
+#  WFH JOB BOT  -  SETTINGS FILE
+#  Edit anything here in Notepad. Keep the quotes " " and the
+#  dashes - as they are, and save the file (Ctrl+S).
+# ============================================================
+
+# ---- WHO YOU ARE / WHAT YOU WANT ---------------------------
+profiles:
+
+  # 1) AI TESTING / QA / AI TRAINER work
+  - name: "AI Testing & QA"
+    keywords:
+      - "AI testing"
+      - "AI trainer"
+      - "AI data annotation"
+      - "software testing"
+      - "QA engineer"
+      - "quality analyst"
+      - "manual testing"
+      - "automation testing"
+      - "test engineer"
+      - "prompt evaluator"
+      - "AI ML"
+      - "AI evaluation"
+      - "data annotation"
+      - "search quality"
+      - "content moderation"
+      - "transcription"
+    apna_categories:            # apna.co category pages
+      - "software-testing-jobs"
+      - "qa-jobs"
+      - "testing-jobs"
+      - "work-from-home-jobs"
+
+  # 2) TEACHING / TUTORING work
+  - name: "Teaching & Tutoring"
+    keywords:
+      - "online teacher"
+      - "online tutor"
+      - "home tutor"
+      - "teaching"
+      - "tutor"
+      - "subject matter expert"
+      - "doubt solver"
+      - "faculty"
+      - "trainer"
+      - "academic counsellor"
+      - "spoken english trainer"
+      - "online faculty"
+    apna_categories:
+      - "online-teaching-jobs"
+      - "teacher-jobs"
+      - "tutor-jobs"
+
+  # 3) DOCUMENTS VERIFICATION / KYC work  (NEW)
+  - name: "Document Verification (KYC)"
+    keywords:
+      - "document verification"
+      - "documents verification"
+      - "document verification executive"
+      - "verification executive"
+      - "verification officer"
+      - "document verifier"
+      - "kyc verification"
+      - "kyc executive"
+      - "kyc analyst"
+      - "background verification"
+      - "onboarding kyc"
+      - "customer verification"
+      - "verification specialist"
+      - "insurance verification"
+      - "record verification"
+    apna_categories:
+      - "work-from-home-jobs"
+
+  # 4) STOCK MARKET / EQUITY RESEARCH work  (NEW)
+  - name: "Stock Market Research"
+    keywords:
+      - "equity research"
+      - "equity research analyst"
+      - "equity analyst"
+      - "stock market analyst"
+      - "stock market research"
+      - "securities analyst"
+      - "investment research"
+      - "fundamental analyst"
+      - "derivatives analyst"
+      - "portfolio analyst"
+      - "capital market research"
+      - "nism"
+    apna_categories:
+      - "research-analyst-jobs"
+      - "work-from-home-jobs"
+
+# ---- WHERE ------------------------------------------------
+location: "India"                # used by LinkedIn / Jooble
+remote_only: true                # true = only work-from-home jobs
+
+# ---- SOURCES YOU WANT TO SEARCH ---------------------------
+sources:
+  linkedin:  true     # works everywhere (incl. free cloud)
+  apna:      true     # works everywhere
+  naukri:    true     # usually blocked from cloud IPs; works best from home Wi-Fi
+  remotive:  true     # free global remote-jobs API (bonus)
+  jobicy:    true     # free global remote-jobs API (bonus)
+  jooble:    false    # turn ON only after you add a free JOOBLE_API_KEY
+
+# ---- JOB QUALITY RULES (age-friendly, scam-safe) ----------
+filters:
+  exclude_fresher_only: true     # skip "Freshers only" / 0-year jobs
+  exclude_internships:  true     # skip internships
+  exclude_commission_only: true  # skip "commission only" agent jobs
+  min_salary_lpa: 0              # 0 = don't filter by salary, else e.g. 4
+  max_age_days: 30               # only jobs posted in the last N days
+  max_jobs_per_source: 200       # cap so it stays fast (4 job types now)
+
+# ---- ALERT SETTINGS ---------------------------------------
+alerts:
+  max_jobs_per_alert: 6          # how many jobs per WhatsApp message (rest go in the digest file)
+  min_trust_score: 55            # 0-100. Jobs below this are NOT alerted (put 0 to send everything)
+  heartbeat_daily: true          # once a day send "bot is alive" even if 0 new jobs
+
+  # ---- which channels to use (all free) ----
+  ntfy:     true                 # 2A) instant phone notification, easiest + most reliable
+  telegram: true                 # 2B) Telegram bot — never rate-limited
+  greenapi: true                 # 2C) REAL WhatsApp from your own number (free plan)
+  whatsapp: false                # CallMeBot — unreliable since 2025, turn on only if yours works
+  email:    false                # optional e-mail copy
+
+# ---- FILE LOCATIONS (usually no need to change) -----------
+state_file:  "data/seen_jobs.json"
+digest_html: "data/latest_digest.html"
+digest_md:   "data/latest_digest.md"
