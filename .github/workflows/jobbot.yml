@@ -1,0 +1,75 @@
+# ============================================================
+#  WFH JOB BOT — cloud schedule (works in ANY folder layout)
+#  This file makes GitHub run your bot 6x a day, free.
+#  It finds the bot files automatically, wherever they are.
+# ============================================================
+name: WFH Job Bot
+
+on:
+  schedule:
+    # 06:30, 09:30, 12:30, 15:30, 18:30, 21:30 IST  (UTC = IST - 5:30)
+    - cron: "0 1,4,7,10,13,16 * * *"
+  workflow_dispatch:        # the "Run workflow" button — use this to test now
+
+permissions:
+  contents: write           # needed to remember seen jobs between runs
+
+concurrency:
+  group: wfh-job-bot
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Find the bot folder (top level or inside a sub-folder)
+        run: |
+          BOT_DIR=""
+          for d in . wfh-job-bot */ ; do
+            base="${d%/}"
+            if [ -f "${base}/requirements.txt" ] && [ -d "${base}/jobbot" ]; then BOT_DIR="${base}"; break; fi
+          done
+          if [ -z "$BOT_DIR" ]; then
+            echo "::error::Could not find the bot files (looked for requirements.txt + a jobbot folder)."
+            echo "--- here is what the repository contains: ---"
+            ls -la
+            exit 1
+          fi
+          echo "Found the bot in: $BOT_DIR"
+          echo "BOT_DIR=$BOT_DIR" >> "$GITHUB_ENV"
+
+      - name: Install dependencies
+        run: pip install -r "${BOT_DIR}/requirements.txt"
+
+      - name: Run the bot
+        env:
+          GREENAPI_ID_INSTANCE: ${{ secrets.GREENAPI_ID_INSTANCE }}
+          GREENAPI_API_TOKEN:   ${{ secrets.GREENAPI_API_TOKEN }}
+          GREENAPI_CHAT_ID:     ${{ secrets.GREENAPI_CHAT_ID }}
+          NTFY_TOPIC:           ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER:          ${{ secrets.NTFY_SERVER }}
+          TELEGRAM_BOT_TOKEN:   ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:     ${{ secrets.TELEGRAM_CHAT_ID }}
+          CALLMEBOT_PHONE:      ${{ secrets.CALLMEBOT_PHONE }}
+          CALLMEBOT_APIKEY:     ${{ secrets.CALLMEBOT_APIKEY }}
+          JOOBLE_API_KEY:       ${{ secrets.JOOBLE_API_KEY }}
+        run: |
+          cd "$BOT_DIR"
+          python -m jobbot.main
+
+      - name: Save seen jobs + latest digest
+        run: |
+          git config user.name  "wfh-job-bot"
+          git config user.email "wfh-job-bot@users.noreply.github.com"
+          git add -A "${BOT_DIR}/data/" || true
+          git diff --quiet --cached || git commit -m "bot: job scan $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push || true
