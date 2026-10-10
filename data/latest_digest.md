@@ -1,15 +1,15 @@
-# WFH Job Bot — digest 09 Oct 2026, 04:52 PM
+# WFH Job Bot — digest 10 Oct 2026, 06:48 AM
 
 **2 new job(s)** matching AI-Testing / Teaching from 221 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 93/100 | Accountancy Faculty (Bihar Board & UP Board | Class 11th & 12th) | PW (PhysicsWallah) | Bihar, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/accountancy-faculty-bihar-board-up-board-class-11th-12th-at-pw-physicswallah-4467043604) |
-| 2 | 83/100 | Data Annotation Analyst | Snap2Insight | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/data-annotation-analyst-at-snap2insight-4476298234) |
+| 1 | 83/100 | GEN AI testing Engineer | Virtusa | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/gen-ai-testing-engineer-at-virtusa-4475285350) |
+| 2 | 83/100 | Equity Research Analyst (Capital Markets/ Healthcare) | Green Lane Talent Management | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/equity-research-analyst-capital-markets-healthcare-at-green-lane-talent-management-4472376907) |
 
 ## Source status
 - **linkedin**: 100 jobs
-- **apna**: 185 jobs
+- **apna**: 184 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
 - **jobicy**: 1 jobs
