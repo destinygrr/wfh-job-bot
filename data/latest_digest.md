@@ -1,17 +1,16 @@
-# WFH Job Bot — digest 10 Oct 2026, 06:48 AM
+# WFH Job Bot — digest 10 Oct 2026, 01:23 PM
 
-**2 new job(s)** matching AI-Testing / Teaching from 221 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 224 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | GEN AI testing Engineer | Virtusa | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/gen-ai-testing-engineer-at-virtusa-4475285350) |
-| 2 | 83/100 | Equity Research Analyst (Capital Markets/ Healthcare) | Green Lane Talent Management | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/equity-research-analyst-capital-markets-healthcare-at-green-lane-talent-management-4472376907) |
+| 1 | 93/100 | Maths Online tutor | Codeyoung | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/maths-online-tutor-at-codeyoung-4478035869) |
 
 ## Source status
 - **linkedin**: 100 jobs
 - **apna**: 184 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 48 jobs
+- **remotive**: 56 jobs
 - **jobicy**: 1 jobs
 
 ## Safety checklist before you apply
