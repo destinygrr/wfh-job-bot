@@ -13,8 +13,10 @@ CallMeBot is a free personal-use WhatsApp gateway. Setup (2 minutes):
 """
 from __future__ import annotations
 
+import os
 import smtplib
 import time
+from datetime import datetime, timedelta, timezone
 import urllib.parse
 from email.message import EmailMessage
 from typing import List, Tuple
@@ -28,6 +30,20 @@ def _digits(text: str) -> str:
 
 def _short(text: str, limit: int) -> str:
     return text if len(text) <= limit else text[: limit - 20].rstrip() + "\n... (truncated)"
+
+
+def run_origin() -> str:
+    """Where did this run happen? GitHub cloud or your own laptop?"""
+    if os.getenv("GITHUB_ACTIONS", "").lower() == "true":
+        rid = os.getenv("GITHUB_RUN_ID", "")
+        return f"GitHub cloud (run #{rid})" if rid else "GitHub cloud"
+    return "your laptop"
+
+
+def run_stamp() -> str:
+    """Indian time, so the message reads naturally for you."""
+    ist = datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)
+    return ist.strftime("%d %b %Y, %I:%M %p IST")
 
 
 # --------------------------------------------------------------------------- #
@@ -134,7 +150,9 @@ def send_ntfy_jobs(s, jobs) -> dict:
 #   -> scan the QR with WhatsApp (Linked devices) -> copy idInstance +
 #   apiTokenInstance -> put them in GREENAPI_ID_INSTANCE / GREENAPI_API_TOKEN.
 # --------------------------------------------------------------------------- #
-def send_greenapi(s, message: str) -> Tuple[bool, str]:
+def send_greenapi(s, message: str, attempts: int = 3) -> Tuple[bool, str]:
+    """Send via Green API. Network hiccups happen (ConnectTimeout), so we retry
+    up to 3 times with a longer timeout before giving up."""
     if not (s.greenapi_id and s.greenapi_token):
         return False, "skipped (GREENAPI_ID_INSTANCE / GREENAPI_API_TOKEN not set)"
     chat = s.greenapi_chat_id or _digits(s.callmebot_phone)
@@ -142,19 +160,27 @@ def send_greenapi(s, message: str) -> Tuple[bool, str]:
         return False, "skipped (set GREENAPI_CHAT_ID, e.g. 919876543210@c.us)"
     if not chat.endswith("@c.us"):
         chat = f"{chat}@c.us"
-    try:
-        r = requests.post(
-            f"https://api.green-api.com/waInstance{s.greenapi_id}/sendMessage/{s.greenapi_token}",
-            json={"chatId": chat, "message": _short(message, 18000)}, timeout=40)
+    url = f"https://api.green-api.com/waInstance{s.greenapi_id}/sendMessage/{s.greenapi_token}"
+    body = {"chatId": chat, "message": _short(message, 18000)}
+    last = "no attempt made"
+    for i in range(attempts):
         try:
-            data = r.json()
-        except Exception:                         # noqa: BLE001
-            data = {}
-        ok = r.status_code == 200 and bool(data.get("idMessage"))
-        info = data.get("idMessage") or data.get("message") or f"HTTP {r.status_code}"
-        return ok, str(info)[:150]
-    except Exception as exc:                      # noqa: BLE001
-        return False, f"error: {type(exc).__name__}"
+            r = requests.post(url, json=body, timeout=60)
+            try:
+                data = r.json()
+            except Exception:                     # noqa: BLE001
+                data = {}
+            if r.status_code == 200 and data.get("idMessage"):
+                return True, str(data["idMessage"])[:150]
+            last = f"HTTP {r.status_code}: {str(data.get('message') or data)[:120]}"
+            # 401/403 = bad keys, 466 = free-plan chat limit -> retrying won't help
+            if r.status_code in (401, 403, 466):
+                return False, last
+        except Exception as exc:                  # noqa: BLE001
+            last = f"error: {type(exc).__name__}"
+        if i < attempts - 1:
+            time.sleep(8 * (i + 1))               # 8s, then 16s before retrying
+    return False, f"{last} (after {attempts} attempts)"
 
 
 # --------------------------------------------------------------------------- #
@@ -204,6 +230,7 @@ def build_summary_message(s, new_jobs: List, run_note: str = "") -> str:
     if run_note:
         lines.append(run_note)
     lines.append("⚠ Never pay any registration/training/deposit fee — a real employer never asks.")
+    lines.append(f"🖥 Checked from: {run_origin()} · {run_stamp()}")
     return "\n".join(lines)
 
 
@@ -215,6 +242,7 @@ def build_heartbeat_message(report: dict) -> str:
     lines.append("")
     lines.append("If a source says 'blocked', that site is refusing cloud IPs — "
                  "run the bot on your home Wi-Fi for that one.")
+    lines.append(f"🖥 Checked from: {run_origin()} · {run_stamp()}")
     return "\n".join(lines)
 
 
