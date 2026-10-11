@@ -50,6 +50,9 @@ class Profile:
     name: str
     keywords: List[str] = field(default_factory=list)
     apna_categories: List[str] = field(default_factory=list)
+    enabled: bool = True          # "enabled: false" switches this whole job type OFF
+    location: str = ""            # e.g. "Hyderabad" = only jobs in that city for this type
+    allow_onsite: bool = False    # true = on-site jobs allowed for this type (e.g. school teacher)
 
 
 @dataclass
@@ -87,17 +90,21 @@ class Settings:
 
     # ------------------------------------------------------- #
     @property
+    def active_profiles(self) -> List[Profile]:
+        return [p for p in self.profiles if p.enabled]
+
+    @property
     def all_keywords(self) -> List[str]:
         out: List[str] = []
-        for p in self.profiles:
+        for p in self.active_profiles:
             out.extend(p.keywords)
         return out
 
-    def spread_keywords(self, limit: int) -> List[str]:
-        """Round-robin across profiles so every job type gets searched equally
-        (taking the first 6 keywords would only ever search profile #1)."""
-        pools = [list(p.keywords) for p in self.profiles if p.keywords]
-        out: List[str] = []
+    def keyword_pairs(self, limit: int):
+        """[(keyword, profile)] round-robin across job types, so every type is
+        searched equally and each keyword carries its own rules (city, on-site)."""
+        pools = [[(k, p) for k in p.keywords] for p in self.active_profiles if p.keywords]
+        out = []
         idx = 0
         while len(out) < limit:
             added = False
@@ -110,16 +117,20 @@ class Settings:
             idx += 1
         return out
 
+    def spread_keywords(self, limit: int) -> List[str]:
+        """Just the keyword strings (used by the global remote-job boards)."""
+        return [k for k, _ in self.keyword_pairs(limit)]
+
     @property
     def all_apna_categories(self) -> List[str]:
         out: List[str] = []
-        for p in self.profiles:
+        for p in self.active_profiles:
             out.extend(p.apna_categories)
         return out
 
     def keyword_to_profile(self, text: str) -> str:
         low = (text or "").lower()
-        for p in self.profiles:
+        for p in self.active_profiles:
             if any(k.lower() in low for k in p.keywords):
                 return p.name
         return self.profiles[0].name if self.profiles else "General"
@@ -138,6 +149,9 @@ def load_settings(config_path: str | os.PathLike | None = None) -> Settings:
             name=p.get("name", "Profile"),
             keywords=[str(k) for k in p.get("keywords", [])],
             apna_categories=[str(k) for k in p.get("apna_categories", [])],
+            enabled=bool(p.get("enabled", True)),
+            location=str(p.get("location", "") or ""),
+            allow_onsite=bool(p.get("allow_onsite", False)),
         )
         for p in raw.get("profiles", [])
     ]
