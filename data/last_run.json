@@ -1,28 +1,28 @@
 {
-  "when": "2026-10-11T06:56:17+00:00",
+  "when": "2026-10-11T07:37:34+00:00",
   "sources": {
     "linkedin": "100 jobs",
     "apna": "84 jobs",
     "naukri": "blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi",
     "remotive": "56 jobs",
-    "jobicy": "3 jobs"
+    "jobicy": "9 jobs"
   },
-  "fetched": 243,
-  "unique": 172,
+  "fetched": 249,
+  "unique": 178,
   "new_matching": 5,
   "alerted": 5,
   "below_threshold": 0,
-  "too_old": 3,
-  "irrelevant": 18,
+  "too_old": 0,
+  "irrelevant": 8,
   "onsite_dropped": 1,
   "blocklisted": 0,
   "outside_city": 7,
   "queued_next": 0,
   "matched_role": 25,
-  "total_seen": 451,
-  "elapsed": 24.82301902770996,
+  "total_seen": 473,
+  "elapsed": 29.507065773010254,
   "notify": {
-    "whatsapp_greenapi": "FAIL \u2014 error: ConnectTimeout",
+    "whatsapp_greenapi": "FAIL \u2014 error: ConnectTimeout (after 3 attempts)",
     "telegram": "SKIP \u2014 skipped (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set)",
     "ntfy": "SKIP \u2014 skipped (NTFY_TOPIC not set)",
     "NOTE": "nothing was delivered \u2014 these jobs stay in the queue and will be alerted again on the next run once the setup is fixed"
