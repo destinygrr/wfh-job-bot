@@ -1,7 +1,10 @@
-# WFH Job Bot — digest 11 Oct 2026, 01:52 PM
+# WFH Job Bot — digest 11 Oct 2026, 08:01 PM
 
-**0 new job(s)** matching AI-Testing / Teaching from 252 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 252 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 91/100 | Gen AI + AI Agents Trainer - Bhopal | Cybrom Technology Pvt. Ltd (Official) | Bhopal, Madhya Pradesh, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/gen-ai-%2B-ai-agents-trainer-bhopal-at-cybrom-technology-pvt-ltd-official-4475669317) |
 
 ## Source status
 - **linkedin**: 100 jobs
