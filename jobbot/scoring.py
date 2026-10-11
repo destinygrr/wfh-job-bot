@@ -132,15 +132,34 @@ def keyword_hit(keyword: str, title_blob: str, full_blob: str) -> bool:
     return kw in full_blob                     # phrase somewhere in the description
 
 
-def match_profile(s, job) -> str | None:
-    """Return the profile name this job belongs to, or None if not relevant."""
+def blocked_by_user(s, job) -> str | None:
+    """Your personal block list: if a job contains one of these words, drop it.
+    Set it in config.yaml under filters: blocklist: [ "german", "insurance agent" ]
+    Matching is case-insensitive and looks at the title, company, tags and location."""
+    words = s.filters.get("blocklist", []) or []
+    blob = " ".join([job.title, job.company, job.tags, job.location]).lower()
+    for w in words:
+        w = str(w).strip().lower()
+        if w and w in blob:
+            return w
+    return None
+
+
+def match_profile_obj(s, job):
+    """The Profile object this job belongs to, or None if it matches no job type."""
     title_blob = " ".join([job.title, job.tags, job.company]).lower()
     full_blob = " ".join([title_blob, job.snippet, job.salary, job.location]).lower()
-    for p in s.profiles:
+    for p in s.active_profiles:
         for kw in p.keywords:
             if keyword_hit(kw, title_blob, full_blob):
-                return p.name
+                return p
     return None
+
+
+def match_profile(s, job) -> str | None:
+    """Name of the job type this job belongs to (or None)."""
+    p = match_profile_obj(s, job)
+    return p.name if p else None
 
 
 @dataclass
@@ -158,6 +177,8 @@ class Job:
     is_remote_hint: bool = False        # source itself is a WFH/remote source
     relevant: bool = True               # matches one of your target roles
     profile: str = ""
+    allow_onsite: bool = False          # this job type allows on-site (e.g. school teacher)
+    required_location: str = ""         # this job type must be in this city (e.g. Hyderabad)
     trust: int = 60
     trust_reasons: List[str] = field(default_factory=list)
     red_flags: List[str] = field(default_factory=list)
@@ -176,23 +197,32 @@ class Job:
         blob = self.blob
         low = blob.lower()
 
-        matched_role = match_profile(s, self)
-        self.relevant = matched_role is not None
-        self.profile = profile_name or matched_role or s.keyword_to_profile(blob)
+        prof = match_profile_obj(s, self)
+        self.relevant = prof is not None
+        self.profile = profile_name or (prof.name if prof else s.keyword_to_profile(blob))
+        self.allow_onsite = bool(getattr(prof, "allow_onsite", False))
+        self.required_location = (getattr(prof, "location", "") or "") if prof else ""
         score, reasons, flags = 70, [], []
-        if matched_role:
+        if prof:
             score += 5
-            reasons.append(f"matches target role ({matched_role})")
+            reasons.append(f"matches target role ({prof.name})")
 
-        # WFH check
-        wfh = self.is_remote_hint or bool(WORK_MODE_HOME.search(blob)) or s.remote_only is False
-        if WORK_MODE_OFFICE.search(blob) and not WORK_MODE_HOME.search(blob):
-            wfh = False
-        if wfh:
-            score += 8
+        # WFH check - skipped for job types that allow on-site (e.g. school teacher)
+        if self.allow_onsite:
+            if WORK_MODE_HOME.search(blob):
+                score += 5
+                reasons.append("mentions work-from-home")
+            reasons.append("on-site allowed for this type"
+                           + (f" (city: {self.required_location})" if self.required_location else ""))
         else:
-            score -= 25
-            flags.append("not clearly work-from-home")
+            wfh = self.is_remote_hint or bool(WORK_MODE_HOME.search(blob)) or s.remote_only is False
+            if WORK_MODE_OFFICE.search(blob) and not WORK_MODE_HOME.search(blob):
+                wfh = False
+            if wfh:
+                score += 8
+            else:
+                score -= 25
+                flags.append("not clearly work-from-home")
 
         for pat, why in SCAM_PATTERNS:
             if re.search(pat, low, re.I):
