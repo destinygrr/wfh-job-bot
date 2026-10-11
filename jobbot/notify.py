@@ -13,7 +13,9 @@ CallMeBot is a free personal-use WhatsApp gateway. Setup (2 minutes):
 """
 from __future__ import annotations
 
+import json
 import os
+from pathlib import Path
 import smtplib
 import time
 from datetime import datetime, timedelta, timezone
@@ -121,6 +123,18 @@ def send_ntfy_jobs(s, jobs) -> dict:
     """One phone notification per job - tap it and the job page opens."""
     if not s.ntfy_topic:
         return {"ntfy": "SKIP — skipped (NTFY_TOPIC not set)"}
+    # safety: never flood the phone - max 12 individual alerts, then a summary
+    MAX_INDIVIDUAL = 12
+    if len(jobs) > MAX_INDIVIDUAL:
+        extra = jobs[MAX_INDIVIDUAL:]
+        ok, info = send_ntfy(
+            s,
+            f"{len(jobs)} matching jobs this run. Showing the best {MAX_INDIVIDUAL} "
+            f"one-by-one as notifications; the rest are in the job digest.",
+            title=f"{len(jobs)} new jobs - see them below",
+            priority="high", tags="house,briefcase")
+        jobs = jobs[:MAX_INDIVIDUAL]
+
     sent, first_err, last = 0, "", ""
     for j in jobs:
         title = f"{j.trust}% | {j.title[:60]}"
@@ -146,13 +160,56 @@ def send_ntfy_jobs(s, jobs) -> dict:
 # --------------------------------------------------------------------------- #
 # Green API — sends WhatsApp from YOUR OWN number. Free "Developer" plan:
 #   unlimited messages/month to up to 3 chats (you only need 1: yourself).
-#   Setup: console.green-api.com -> free account -> create instance (Developer)
-#   -> scan the QR with WhatsApp (Linked devices) -> copy idInstance +
-#   apiTokenInstance -> put them in GREENAPI_ID_INSTANCE / GREENAPI_API_TOKEN.
+#
+# IMPORTANT: Green API spreads instances across regional hosts
+# (7103.api.green-api.com, 7105..., 7107...). Each instance only works on its
+# OWN host; the others reply "403/404" because they don't know your instance.
+# The main host api.green-api.com can also be down. So we:
+#   1. use GREENAPI_API_URL if you set it (copy "apiUrl" from your console), then
+#   2. fall back to the host that worked last time (cached), then
+#   3. try every known host until one accepts your instance.
 # --------------------------------------------------------------------------- #
-def send_greenapi(s, message: str, attempts: int = 3) -> Tuple[bool, str]:
-    """Send via Green API. Network hiccups happen (ConnectTimeout), so we retry
-    up to 3 times with a longer timeout before giving up."""
+GREENAPI_HOSTS = ["https://api.green-api.com"] + [
+    f"https://71{n:02d}.api.green-api.com" for n in range(1, 11)
+] + ["https://7103.api.green-api.com"]
+
+
+def _greenapi_host_cache() -> Path:
+    d = Path(__file__).resolve().parent.parent / "data"
+    d.mkdir(parents=True, exist_ok=True)
+    return d / "greenapi_host.json"
+
+
+def _cached_host() -> str:
+    try:
+        return json.loads(_greenapi_host_cache().read_text(encoding="utf-8")).get("host", "")
+    except Exception:                             # noqa: BLE001
+        return ""
+
+
+def _remember_host(host: str) -> None:
+    try:
+        _greenapi_host_cache().write_text(json.dumps({"host": host}), encoding="utf-8")
+    except Exception:                             # noqa: BLE001
+        pass
+
+
+def _greenapi_host_list(s) -> list:
+    """Ordered, de-duplicated list of hosts to try."""
+    ordered = []
+    for h in [os.getenv("GREENAPI_API_URL", ""), _cached_host(),
+              getattr(s, "greenapi_api_url", ""), *GREENAPI_HOSTS]:
+        h = (h or "").rstrip("/")
+        if h and h not in ordered:
+            ordered.append(h)
+    return ordered
+
+
+def _host_label(host: str) -> str:
+    return host.replace("https://", "").replace("http://", "")
+
+
+def send_greenapi(s, message: str, attempts_per_host: int = 2) -> Tuple[bool, str]:
     if not (s.greenapi_id and s.greenapi_token):
         return False, "skipped (GREENAPI_ID_INSTANCE / GREENAPI_API_TOKEN not set)"
     chat = s.greenapi_chat_id or _digits(s.callmebot_phone)
@@ -160,27 +217,36 @@ def send_greenapi(s, message: str, attempts: int = 3) -> Tuple[bool, str]:
         return False, "skipped (set GREENAPI_CHAT_ID, e.g. 919876543210@c.us)"
     if not chat.endswith("@c.us"):
         chat = f"{chat}@c.us"
-    url = f"https://api.green-api.com/waInstance{s.greenapi_id}/sendMessage/{s.greenapi_token}"
     body = {"chatId": chat, "message": _short(message, 18000)}
-    last = "no attempt made"
-    for i in range(attempts):
-        try:
-            r = requests.post(url, json=body, timeout=60)
+
+    problems = []
+    for host in _greenapi_host_list(s):
+        url = f"{host}/waInstance{s.greenapi_id}/sendMessage/{s.greenapi_token}"
+        for i in range(attempts_per_host):
+            try:
+                r = requests.post(url, json=body, timeout=(6, 45))
+            except Exception as exc:              # noqa: BLE001  network problem -> retry, then next host
+                problems.append(f"{_host_label(host)}: {type(exc).__name__}")
+                if i < attempts_per_host - 1:
+                    time.sleep(3)
+                continue
+
+            text = r.text or ""
+            # wrong cluster -> nginx says 403/404 with an HTML page; move on quickly
+            if ("<html" in text.lower()) or ("nginx" in text):
+                problems.append(f"{_host_label(host)}: not this cluster")
+                break
             try:
                 data = r.json()
             except Exception:                     # noqa: BLE001
                 data = {}
             if r.status_code == 200 and data.get("idMessage"):
-                return True, str(data["idMessage"])[:150]
-            last = f"HTTP {r.status_code}: {str(data.get('message') or data)[:120]}"
-            # 401/403 = bad keys, 466 = free-plan chat limit -> retrying won't help
-            if r.status_code in (401, 403, 466):
-                return False, last
-        except Exception as exc:                  # noqa: BLE001
-            last = f"error: {type(exc).__name__}"
-        if i < attempts - 1:
-            time.sleep(8 * (i + 1))               # 8s, then 16s before retrying
-    return False, f"{last} (after {attempts} attempts)"
+                _remember_host(host)              # remember for next time (faster runs)
+                return True, f"{data['idMessage']} (via {_host_label(host)})"
+            # a JSON reply means we reached the RIGHT cluster -> the error is real
+            detail = data.get("message") or str(data)[:120] or f"HTTP {r.status_code}"
+            return False, f"HTTP {r.status_code}: {detail} (via {_host_label(host)})"
+    return False, ("could not reach any Green API host — " + "; ".join(problems[-4:]))
 
 
 # --------------------------------------------------------------------------- #
