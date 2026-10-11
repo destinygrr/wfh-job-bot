@@ -69,6 +69,31 @@ profiles:
     apna_categories:
       - "work-from-home-jobs"
 
+  # 6) PURCHASE / SUPPLY CHAIN  -  FULL TIME, HYDERABAD only
+  #    (this one is NOT work-from-home: on-site / hybrid Hyderabad jobs are wanted)
+  - name: "Purchase & Supply Chain (Hyderabad)"
+    enabled: true
+    location: "Hyderabad"        # only jobs whose location says Hyderabad
+    allow_onsite: true           # full-time on-site / hybrid jobs are allowed
+    keywords:
+      - "purchase"
+      - "procurement"
+      - "material"
+      - "sourcing"
+      - "supply chain"
+      - "warehouse"
+      - "logistics"
+      - "inventory"
+      - "AI P2P automation"
+      - "agentic AI agent development"
+    apna_categories:
+      - "purchase-jobs"
+      - "procurement-jobs"
+      - "supply-chain-jobs"
+      - "warehouse-jobs"
+      - "logistics-jobs"
+      - "material-management-jobs"
+
 # ---- WHERE ------------------------------------------------
 location: "India"                # default for every job type (School Teacher overrides its own)
 remote_only: true                # true = work-from-home only, for all types except those
@@ -106,7 +131,7 @@ filters:
 
 # ---- ALERT SETTINGS ---------------------------------------
 alerts:
-  max_jobs_per_alert: 50         # send ALL matching jobs in one message
+  max_jobs_per_alert: 50         # send ALL matching jobs in one message (no more queueing)
   min_trust_score: 55            # 0-100. Jobs below this are NOT alerted (0 = send everything)
   heartbeat_daily: true          # once a day send "bot is alive" even if 0 new jobs
 
