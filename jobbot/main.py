@@ -34,9 +34,18 @@ def _age_ok(job, max_days: int) -> bool:
     return datetime.now(timezone.utc) - d <= timedelta(days=max_days)
 
 
-def _hard_excluded(job, flt, remote_only: bool = True) -> bool:
-    # you asked for WORK FROM HOME: on-site roles are dropped, not just down-ranked
-    if remote_only and any("not clearly work-from-home" in f for f in job.red_flags):
+def _hard_excluded(job, flt, remote_only: bool = True, s=None) -> bool:
+    # WORK FROM HOME rule - but job types that allow on-site (e.g. school teacher) are exempt
+    if remote_only and not job.allow_onsite and any(
+            "not clearly work-from-home" in f for f in job.red_flags):
+        return True
+    # city rule for job types that are location-bound (e.g. school teacher -> Hyderabad only)
+    if job.required_location:
+        haystack = " ".join([job.location, job.title, job.tags, job.company]).lower()
+        if job.required_location.lower() not in haystack:
+            return True
+    # your personal block list (config.yaml -> filters: blocklist)
+    if s is not None and scoring.blocked_by_user(s, job):
         return True
     if flt.get("exclude_fresher_only", True) and any("Freshers-only" in f for f in job.red_flags):
         return True
@@ -116,9 +125,16 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
         if not _age_ok(j, int(s.filters.get("max_age_days", 30))):
             skipped_age += 1
             continue
-        if _hard_excluded(j, s.filters, s.remote_only):
+        if _hard_excluded(j, s.filters, s.remote_only, s):
             continue
         fresh.append(j)
+
+    blocked_by_list = sum(1 for j in unique.values()
+                          if j.relevant and scoring.blocked_by_user(s, j))
+    outside_city = sum(
+        1 for j in unique.values()
+        if j.relevant and j.required_location
+        and j.required_location.lower() not in " ".join([j.location, j.title, j.tags]).lower())
 
     onsite_dropped = sum(
         1 for j in unique.values()
@@ -129,15 +145,6 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
     alert_jobs = [j for j in fresh if j.trust >= min_trust]
     cap = int(s.alerts.get("max_jobs_per_alert", 8))
     alert_batch, overflow = alert_jobs[:cap], alert_jobs[cap:]
-
-    # Remember everything we saw, so the next run only alerts NEW jobs.
-    # Exception: jobs that were above your threshold but didn't fit in this
-    # message (the "overflow") stay unremembered, so they are alerted in the
-    # NEXT run instead of being silently skipped. (--dry-run consumes nothing.)
-    queued_keys = {j.key for j in overflow}
-    if not dry_run:
-        st.mark([k for k in unique.keys() if k not in queued_keys])
-        st.save()
 
     # ---------------- report + digest ----------------
     report = {
@@ -151,6 +158,8 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
         "too_old": skipped_age,
         "irrelevant": irrelevant,
         "onsite_dropped": onsite_dropped,
+        "blocklisted": blocked_by_list,
+        "outside_city": outside_city,
         "queued_next": len(overflow),
         "matched_role": sum(1 for j in unique.values() if j.relevant),
         "total_seen": len(st),
@@ -163,6 +172,10 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
             msg += (f"\n+ {len(overflow)} more good job(s) waiting — you'll get them in "
                     f"the next check, so nothing is lost. (Full list any time: data/latest_digest.html)")
         report["notify"] = notify.notify_new_jobs(s, alert_batch, msg)
+        delivered = any(str(v).startswith("OK") for v in (report.get("notify") or {}).values())
+        if not delivered:
+            report["notify"]["NOTE"] = ("nothing was delivered — these jobs stay in the queue and "
+                                        "will be alerted again on the next run once the setup is fixed")
     elif not dry_run:
         # heartbeat once a day so you know the bot is alive and free
         hb = st.heartbeat_state()
@@ -173,6 +186,18 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
             st.set_heartbeat_state(hb)
     else:
         report["notify"] = {"dry-run": "no alerts sent"}
+
+    # Remember everything we saw, so the next run only alerts NEW jobs.
+    # Exceptions (kept unremembered, so they get re-offered):
+    #   * "overflow"  -> more good jobs than fit in one message = queue for next run
+    #   * alert_batch -> when NO channel delivered (e.g. a typo in secrets.env),
+    #                    don't swallow the best jobs; send them again next time.
+    if not dry_run:
+        keep = {j.key for j in overflow}
+        if alert_batch and not any(str(v).startswith("OK") for v in (report.get("notify") or {}).values()):
+            keep |= {j.key for j in alert_batch}
+        st.mark([k for k in unique.keys() if k not in keep])
+        st.save()
 
     digest_set = fresh if fresh else alert_batch
     md = digest.build_markdown(digest_set, list(unique.values()), report, min_trust=min_trust)
@@ -188,6 +213,10 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
     print(f"  matched role : {report['matched_role']}")
     if s.remote_only:
         print(f"  ON-SITE DROPPED: {report['onsite_dropped']}  (right role, but not work-from-home)")
+    if report["blocklisted"]:
+        print(f"  blocked by your list: {report['blocklisted']}")
+    if report["outside_city"]:
+        print(f"  dropped (outside your city rule): {report['outside_city']}")
     print(f"  NEW matching : {report['new_matching']}   (wrong-role ignored: {report['irrelevant']})")
     if report["queued_next"]:
         print(f"  queued next  : {report['queued_next']}  (above threshold, will be alerted in the NEXT run)")
