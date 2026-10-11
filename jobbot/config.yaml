@@ -106,7 +106,7 @@ filters:
 
 # ---- ALERT SETTINGS ---------------------------------------
 alerts:
-  max_jobs_per_alert: 6          # how many jobs per WhatsApp message (rest go in the digest)
+  max_jobs_per_alert: 50         # send ALL matching jobs in one message
   min_trust_score: 55            # 0-100. Jobs below this are NOT alerted (0 = send everything)
   heartbeat_daily: true          # once a day send "bot is alive" even if 0 new jobs
 
