@@ -1,17 +1,15 @@
-# WFH Job Bot — digest 11 Oct 2026, 07:40 AM
+# WFH Job Bot — digest 11 Oct 2026, 08:06 AM
 
-**5 new job(s)** matching AI-Testing / Teaching from 178 fetched.
+**3 new job(s)** matching AI-Testing / Teaching from 145 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 93/100 | Corporate Derivatives Group - Rates, Senior Analyst, Global Capital Market | Morgan Stanley | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/corporate-derivatives-group-rates-senior-analyst-global-capital-market-at-morgan-stanley-4451601163) |
-| 2 | 83/100 | Specialist, Software Engineer - Verification and Validation | Acron Aviation | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/specialist-software-engineer-verification-and-validation-at-acron-aviation-4465929463) |
-| 3 | 75/100 | Primary Mathematics Teacher | Siate Felici School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/primary-mathematics-teacher-at-siate-felici-school-4472122477) |
-| 4 | 75/100 | English Teacher for CBSE School | Orchids The International School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/english-teacher-for-cbse-school-at-orchids-the-international-school-4477141003) |
-| 5 | 75/100 | Physics Teacher | Oakridge International School, Bachupally | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/physics-teacher-at-oakridge-international-school-bachupally-4469419773) |
+| 1 | 75/100 | Primary Mathematics Teacher | Siate Felici School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/primary-mathematics-teacher-at-siate-felici-school-4472122477) |
+| 2 | 75/100 | English Teacher for CBSE School | Orchids The International School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/english-teacher-for-cbse-school-at-orchids-the-international-school-4477141003) |
+| 3 | 75/100 | Physics Teacher | Oakridge International School, Bachupally | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/physics-teacher-at-oakridge-international-school-bachupally-4469419773) |
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 50 jobs
 - **apna**: 84 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
