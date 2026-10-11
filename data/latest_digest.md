@@ -1,24 +1,21 @@
-# WFH Job Bot — digest 10 Oct 2026, 07:54 PM
+# WFH Job Bot — digest 11 Oct 2026, 06:56 AM
 
-**8 new job(s)** matching AI-Testing / Teaching from 269 fetched.
+**5 new job(s)** matching AI-Testing / Teaching from 172 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 91/100 | iHiring CFA Level 1 - Equity Research Analyst | V2U Consultancy Services Pvt. Ltd. | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ihiring-cfa-level-1-equity-research-analyst-at-v2u-consultancy-services-pvt-ltd-4476828711) |
-| 2 | 83/100 | Software Quality Assurance Analyst | Wolters Kluwer | Pune/Pimpri-Chinchwad Area | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/software-quality-assurance-analyst-at-wolters-kluwer-4474607846) |
-| 3 | 83/100 | Associate - Quality Analyst | EXL | Noida, Uttar Pradesh, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/associate-quality-analyst-at-exl-4446585293) |
-| 4 | 83/100 | Quality Assurance Analyst | Ryan | Greater Hyderabad Area | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/quality-assurance-analyst-at-ryan-4474286801) |
-| 5 | 83/100 | Quality Assurance Analyst | Infor | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/quality-assurance-analyst-at-infor-4475222207) |
-| 6 | 83/100 | Analyst, Quality Assurance | Connor, Clark & Lunn Financial Group (CC&L) | Gurugram, Haryana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/analyst-quality-assurance-at-connor-clark-lunn-financial-group-cc-l-4440098281) |
-| 7 | 83/100 | Subject Matter Expert (SME) – Air-Insulated and Gas-Insulated Switchgear (AIS/GIS) | Quest Global | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/subject-matter-expert-sme-%E2%80%93-air-insulated-and-gas-insulated-switchgear-ais-gis-at-quest-global-4473233536) |
-| 8 | 83/100 | Senior Test Engineer IRC303900 | GlobalLogic | Pune City, Maharashtra, India | ~₹3.04 LPA | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/senior-test-engineer-irc303900-at-globallogic-4469426623) |
+| 1 | 93/100 | Corporate Derivatives Group - Rates, Senior Analyst, Global Capital Market | Morgan Stanley | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/corporate-derivatives-group-rates-senior-analyst-global-capital-market-at-morgan-stanley-4451601163) |
+| 2 | 83/100 | Specialist, Software Engineer - Verification and Validation | Acron Aviation | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/specialist-software-engineer-verification-and-validation-at-acron-aviation-4465929463) |
+| 3 | 75/100 | Primary Mathematics Teacher | Siate Felici School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/primary-mathematics-teacher-at-siate-felici-school-4472122477) |
+| 4 | 75/100 | English Teacher for CBSE School | Orchids The International School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/english-teacher-for-cbse-school-at-orchids-the-international-school-4477141003) |
+| 5 | 75/100 | Physics Teacher | Oakridge International School, Bachupally | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/physics-teacher-at-oakridge-international-school-bachupally-4469419773) |
 
 ## Source status
-- **linkedin**: 160 jobs
-- **apna**: 184 jobs
+- **linkedin**: 100 jobs
+- **apna**: 84 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 1 jobs
+- **jobicy**: 3 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
