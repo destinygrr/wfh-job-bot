@@ -48,26 +48,27 @@ def _session() -> requests.Session:
 def fetch_linkedin(s, max_jobs: int = 200, pages: int = 2) -> Tuple[List[Job], str]:
     jobs: List[Job] = []
     sess = _session()
-    # round-robin the keywords so all four job types are searched equally
-    kws = s.spread_keywords(32)
-    if len(kws) > 20:
+    # round-robin the keywords; each carries its profile's city + remote rule
+    pairs = s.keyword_pairs(32)
+    if len(pairs) > 16:
         pages = 1                      # many keywords -> one page each, stays polite
     base = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
     try:
-        for kw in kws:
+        for kw, prof in pairs:
+            want_remote = s.remote_only and not prof.allow_onsite
             for page in range(pages):
                 params = {
                     "keywords": kw,
-                    "location": s.location,
+                    "location": prof.location or s.location,
                     "start": page * 10,
                 }
-                if s.remote_only:
+                if want_remote:
                     params["f_WT"] = "2"          # 2 = Remote
                 url = f"{base}?{urlencode(params)}"
                 r = sess.get(url, timeout=TIMEOUT)
                 if r.status_code != 200 or "No matching" in r.text:
                     break
-                jobs.extend(_parse_linkedin(r.text, remote_hint=s.remote_only))
+                jobs.extend(_parse_linkedin(r.text, remote_hint=want_remote))
                 if len(jobs) >= max_jobs:
                     return jobs[:max_jobs], f"{len(jobs)} jobs"
                 time.sleep(0.6)
