@@ -1,22 +1,16 @@
-# WFH Job Bot — digest 13 Oct 2026, 07:29 AM
+# WFH Job Bot — digest 13 Oct 2026, 05:26 PM
 
-**7 new job(s)** matching AI-Testing / Teaching from 317 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 256 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 91/100 | AI/ML & Gen AI Faculty (Trainer) (Bhopal) | Cybrom Technology Pvt. Ltd (Official) | Bhopal, Madhya Pradesh, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-ml-gen-ai-faculty-trainer-bhopal-at-cybrom-technology-pvt-ltd-official-4476025384) |
-| 2 | 83/100 | Generative AI Trainer | Techpanda Academy | Coimbatore, Tamil Nadu, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/generative-ai-trainer-at-techpanda-academy-4472172077) |
-| 3 | 83/100 | Emerging Executive KYC and AML | Macquarie Group | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/emerging-executive-kyc-and-aml-at-macquarie-group-4474035978) |
-| 4 | 81/100 | Teacher | My School Italy | Kothaguda, Hyderabad | ₹15k-35k/yr | Apna | [Apply](https://apna.co/job/hyderabad/teacher-964501330) |
-| 5 | 75/100 | Warehouse Manager | HM.CLAUSE | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/warehouse-manager-at-hm-clause-4474049032) |
-| 6 | 75/100 | Warehouse Manager | LIMAGRAIN | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/warehouse-manager-at-limagrain-4475564460) |
-| 7 | 75/100 | LOGISTICS & INVENTORY MANAGER | KS Bakers | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/logistics-inventory-manager-at-ks-bakers-4473353704) |
+| 1 | 83/100 | Online High School Teacher (Maths / Science / English) | GoLearnIndia | Anupgarh, Rajasthan, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/online-high-school-teacher-maths-science-english-at-golearnindia-4476437153) |
 
 ## Source status
-- **linkedin**: 190 jobs
+- **linkedin**: 100 jobs
 - **apna**: 213 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 48 jobs
+- **remotive**: 56 jobs
 - **jobicy**: 10 jobs
 
 ## Safety checklist before you apply
