@@ -1,28 +1,28 @@
 {
-  "when": "2026-10-14T12:43:42+00:00",
+  "when": "2026-10-14T17:51:39+00:00",
   "sources": {
-    "linkedin": "70 jobs",
+    "linkedin": "190 jobs",
     "apna": "213 jobs",
     "naukri": "blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi",
     "remotive": "48 jobs",
-    "jobicy": "8 jobs"
+    "jobicy": "7 jobs"
   },
-  "fetched": 326,
-  "unique": 232,
-  "new_matching": 1,
-  "alerted": 1,
+  "fetched": 445,
+  "unique": 329,
+  "new_matching": 5,
+  "alerted": 5,
   "below_threshold": 0,
   "too_old": 0,
-  "irrelevant": 10,
-  "onsite_dropped": 0,
+  "irrelevant": 11,
+  "onsite_dropped": 1,
   "blocklisted": 0,
-  "outside_city": 25,
+  "outside_city": 28,
   "queued_next": 0,
-  "matched_role": 49,
-  "total_seen": 766,
-  "elapsed": 47.44070863723755,
+  "matched_role": 82,
+  "total_seen": 778,
+  "elapsed": 55.99318718910217,
   "notify": {
-    "whatsapp_greenapi": "OK \u2014 3EB02876743739B0C63A00 (via 7107.api.green-api.com)",
+    "whatsapp_greenapi": "OK \u2014 3EB07B92E115A5BC5A14E8 (via 7107.api.green-api.com)",
     "telegram": "SKIP \u2014 skipped (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set)",
     "ntfy": "SKIP \u2014 skipped (NTFY_TOPIC not set)"
   }
