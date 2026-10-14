@@ -1,17 +1,16 @@
-# WFH Job Bot — digest 14 Oct 2026, 05:56 AM
+# WFH Job Bot — digest 14 Oct 2026, 12:43 PM
 
-**2 new job(s)** matching AI-Testing / Teaching from 307 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 232 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Hiring Technological & Application Consultant -Material Characterization/ Hyderabad location | Mettler-Toledo International, Inc | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/hiring-technological-application-consultant-material-characterization-hyderabad-location-at-mettler-toledo-international-inc-4478167710) |
-| 2 | 83/100 | AI Solutions Expert – Procurement (Procure-to-Pay) | Arise TechGlobal | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-solutions-expert-%E2%80%93-procurement-procure-to-pay-at-arise-techglobal-4477984738) |
+| 1 | 83/100 | Lead Verification Executive | Settlemyloan | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/4478134688) |
 
 ## Source status
-- **linkedin**: 170 jobs
-- **apna**: 212 jobs
+- **linkedin**: 70 jobs
+- **apna**: 213 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 56 jobs
+- **remotive**: 48 jobs
 - **jobicy**: 8 jobs
 
 ## Safety checklist before you apply
