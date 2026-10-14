@@ -1,17 +1,18 @@
-# WFH Job Bot — digest 13 Oct 2026, 05:26 PM
+# WFH Job Bot — digest 14 Oct 2026, 05:56 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 256 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 307 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Online High School Teacher (Maths / Science / English) | GoLearnIndia | Anupgarh, Rajasthan, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/online-high-school-teacher-maths-science-english-at-golearnindia-4476437153) |
+| 1 | 83/100 | Hiring Technological & Application Consultant -Material Characterization/ Hyderabad location | Mettler-Toledo International, Inc | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/hiring-technological-application-consultant-material-characterization-hyderabad-location-at-mettler-toledo-international-inc-4478167710) |
+| 2 | 83/100 | AI Solutions Expert – Procurement (Procure-to-Pay) | Arise TechGlobal | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-solutions-expert-%E2%80%93-procurement-procure-to-pay-at-arise-techglobal-4477984738) |
 
 ## Source status
-- **linkedin**: 100 jobs
-- **apna**: 213 jobs
+- **linkedin**: 170 jobs
+- **apna**: 212 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 10 jobs
+- **jobicy**: 8 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
