@@ -1,21 +1,17 @@
-# WFH Job Bot — digest 14 Oct 2026, 05:51 PM
+# WFH Job Bot — digest 15 Oct 2026, 05:40 AM
 
-**5 new job(s)** matching AI-Testing / Teaching from 329 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 247 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 91/100 | Fund Services.KYC/AML Senior Analyst | The Citco Group Limited | Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/fund-services-kyc-aml-senior-analyst-at-the-citco-group-limited-4476664383) |
-| 2 | 83/100 | Logistics Coordinator | BlackBuck Limited | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/logistics-coordinator-at-blackbuck-limited-4478174798) |
-| 3 | 83/100 | UVM Verification specialist for ASIC and/or FPGA development | AFRY | Pune/Pimpri-Chinchwad Area | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/uvm-verification-specialist-for-asic-and-or-fpga-development-at-afry-4411867127) |
-| 4 | 75/100 | Teacher | Sai Chaitanya Model School | Hyderabad | ₹15k-30k/yr | Apna | [Apply](https://apna.co/job/hyderabad/teacher-944032998) |
-| 5 | 75/100 | Store Manager- Inventory and Logistics | Leanwatts | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/store-manager-inventory-and-logistics-at-leanwatts-4476635051) |
+| 1 | 83/100 | Fixed Income Derivatives Sales Analyst | JPMorganChase | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/fixed-income-derivatives-sales-analyst-at-jpmorganchase-4479744923) |
 
 ## Source status
-- **linkedin**: 190 jobs
+- **linkedin**: 90 jobs
 - **apna**: 213 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 7 jobs
+- **jobicy**: 9 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
