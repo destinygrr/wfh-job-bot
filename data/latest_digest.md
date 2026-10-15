@@ -1,15 +1,11 @@
-# WFH Job Bot — digest 15 Oct 2026, 12:31 PM
+# WFH Job Bot — digest 15 Oct 2026, 05:41 PM
 
-**2 new job(s)** matching AI-Testing / Teaching from 243 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 241 fetched.
 
-| # | Trust | Role | Company | Location | Pay | Source | Apply |
-|---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 93/100 | Online Tutor | Codeyoung | Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/online-tutor-at-codeyoung-4479812604) |
-| 2 | 87/100 | Purchase Manager | VR Elite | Sanath Nagar, Hyderabad | ₹70k-80k/yr | Apna | [Apply](https://apna.co/job/hyderabad/purchase-manager-254055859) |
 
 ## Source status
-- **linkedin**: 80 jobs
-- **apna**: 213 jobs
+- **linkedin**: 70 jobs
+- **apna**: 212 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
 - **jobicy**: 12 jobs
