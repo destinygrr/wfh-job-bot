@@ -1,17 +1,18 @@
-# WFH Job Bot — digest 15 Oct 2026, 05:40 AM
+# WFH Job Bot — digest 15 Oct 2026, 12:31 PM
 
-**1 new job(s)** matching AI-Testing / Teaching from 247 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 243 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Fixed Income Derivatives Sales Analyst | JPMorganChase | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/fixed-income-derivatives-sales-analyst-at-jpmorganchase-4479744923) |
+| 1 | 93/100 | Online Tutor | Codeyoung | Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/online-tutor-at-codeyoung-4479812604) |
+| 2 | 87/100 | Purchase Manager | VR Elite | Sanath Nagar, Hyderabad | ₹70k-80k/yr | Apna | [Apply](https://apna.co/job/hyderabad/purchase-manager-254055859) |
 
 ## Source status
-- **linkedin**: 90 jobs
+- **linkedin**: 80 jobs
 - **apna**: 213 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 9 jobs
+- **jobicy**: 12 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
