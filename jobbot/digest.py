@@ -7,6 +7,38 @@ from pathlib import Path
 from typing import Dict, List
 
 
+def cover_note(s, job) -> str:
+    """A short, honest cover note the user can paste in 10 seconds.
+    (We do NOT auto-apply - LinkedIn bans automation - but this removes the typing.)"""
+    a = s.applicant or {}
+    name = a.get("name", "Your Name")
+    exp = a.get("experience", "")
+    # pick the skill line that fits THIS job's type (config: applicant.skill_map)
+    smap = a.get("skill_map") or {}
+    skill = ""
+    import re as _re
+    for key, val in smap.items():
+        if key == "default":
+            continue
+        if _re.search(rf"\b{_re.escape(key.lower())}\b", (job.profile or "").lower()):
+            skill = str(val)
+            break
+    if not skill:
+        skill = str(smap.get("default", "") or ", ".join(a.get("highlights", []) or []))
+    place = ("I am based in Hyderabad and available for an in-person interview."
+             if job.allow_onsite else
+             "I am fully set up to work from home with a stable internet connection.")
+    bits = [
+        "Dear Hiring Team,",
+        f"I am applying for the {job.title} role at {job.company or 'your company'}.",
+        (f"I bring {exp} of experience" + (f" in {skill}" if skill else "") + ".") if exp else "",
+        place,
+        "I can join immediately and would be glad to discuss how I can contribute.",
+        f"Regards,\n{name}",
+    ]
+    return "\n".join(b for b in bits if b)
+
+
 def _badge(score: int) -> str:
     if score >= 80:
         return "#0f9d58", "High trust"
@@ -17,7 +49,7 @@ def _badge(score: int) -> str:
     return "#db4437", "Risky"
 
 
-def build_markdown(new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int = 0) -> str:
+def build_markdown(s, new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int = 0) -> str:
     ts = datetime.now(timezone.utc).astimezone().strftime("%d %b %Y, %I:%M %p")
     lines = [f"# WFH Job Bot — digest {ts}", ""]
     lines.append(f"**{len(new_jobs)} new job(s)** matching AI-Testing / Teaching from {len(all_run_jobs)} fetched.")
@@ -30,6 +62,15 @@ def build_markdown(new_jobs: List, all_run_jobs: List, report: Dict, min_trust: 
             lines.append(
                 f"| {i} | {j.trust}/100{mark} | {j.title} | {j.company or '-'} | "
                 f"{j.location or '-'} | {j.salary or '-'} | {j.source} | [Apply]({j.url}) |")
+    if new_jobs:
+        lines.append("")
+        lines.append("## Ready-to-paste cover notes")
+        for i, j in enumerate(new_jobs[:10], 1):
+            lines.append("")
+            lines.append(f"**{i}) {j.title} — {j.company or ''}**")
+            lines.append("```")
+            lines.append(cover_note(s, j))
+            lines.append("```")
     lines.append("")
     lines.append("## Source status")
     for k, v in report.get("sources", {}).items():
@@ -52,7 +93,7 @@ SAFETY_TIPS = [
 ]
 
 
-def build_html(new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int = 0) -> str:
+def build_html(s, new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int = 0) -> str:
     ts = datetime.now(timezone.utc).astimezone().strftime("%d %b %Y, %I:%M %p")
     rows = []
     for i, j in enumerate(new_jobs, 1):
@@ -61,6 +102,7 @@ def build_html(new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int 
         reasons = ", ".join(j.trust_reasons[:4])
         lowflag = ("<span class='flag low'>below your alert threshold</span>"
                    if j.trust < min_trust else "")
+        note = _html.escape(cover_note(s, j))
         rows.append(f"""
         <tr>
           <td class='num'>{i}</td>
@@ -70,6 +112,8 @@ def build_html(new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int 
             <div class='meta'>{_html.escape(j.source)} · posted {_html.escape(j.posted or '—')} · {_html.escape(j.salary or 'pay not stated')}</div>
             {f"<div class='why'>Good signs: {_html.escape(reasons)}</div>" if reasons else ""}
             {flags}{lowflag}
+            <details class="cover"><summary>📝 Ready-to-paste cover note (saves you 10 minutes)</summary>
+              <pre>{note}</pre></details>
           </td>
           <td class='trust'>
             <span class='score' style='background:{color}'>{j.trust}</span>
@@ -110,6 +154,8 @@ def build_html(new_jobs: List, all_run_jobs: List, report: Dict, min_trust: int 
  .why{{color:#0f7a4a;font-size:12.5px;margin-top:6px}}
  .flag{{display:inline-block;background:#fff4e5;color:#8a4b00;border:1px solid #ffd9a8;border-radius:999px;padding:1px 9px;font-size:12px;margin:6px 6px 0 0}}
  .flag.low{{background:#eef2f7;color:#54637a;border-color:#dbe3ec}}
+ .cover{{margin-top:8px}} .cover summary{{cursor:pointer;color:#0b57d0;font-size:13px}}
+ .cover pre{{white-space:pre-wrap;background:#f7f9fc;border:1px solid var(--line);border-radius:8px;padding:10px;font:13px/1.5 system-ui,sans-serif;margin:8px 0 0}}
  .trust{{text-align:center;width:104px}}
  .score{{display:inline-block;color:#fff;font-weight:700;border-radius:999px;padding:4px 12px}}
  .lbl{{font-size:11.5px;margin-top:4px}}
