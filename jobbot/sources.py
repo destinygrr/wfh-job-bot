@@ -15,6 +15,27 @@ from urllib.parse import quote_plus, urlencode
 import requests
 
 from .scoring import Job
+from datetime import datetime, timezone
+
+
+def _pick_locations(locs, per_run: int = 2):
+    """Rotate through a profile's search countries so each RUN covers the next
+    two countries. Uses the hour, not the day, so several runs on the same day
+    each move forward (and the whole list still cycles within ~4 runs)."""
+    if not locs:
+        return []
+    if len(locs) <= per_run:
+        return list(locs)
+    slot = int(datetime.now(timezone.utc).timestamp() // 3600)   # changes every hour
+    start = (slot * per_run) % len(locs)
+    picked = []
+    i = 0
+    while len(picked) < per_run:
+        cand = locs[(start + i) % len(locs)]
+        if cand not in picked:
+            picked.append(cand)
+        i += 1
+    return picked
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36")
@@ -56,22 +77,25 @@ def fetch_linkedin(s, max_jobs: int = 200, pages: int = 2) -> Tuple[List[Job], s
     try:
         for kw, prof in pairs:
             want_remote = s.remote_only and not prof.allow_onsite
-            for page in range(pages):
-                params = {
-                    "keywords": kw,
-                    "location": prof.location or s.location,
-                    "start": page * 10,
-                }
-                if want_remote:
-                    params["f_WT"] = "2"          # 2 = Remote
-                url = f"{base}?{urlencode(params)}"
-                r = sess.get(url, timeout=TIMEOUT)
-                if r.status_code != 200 or "No matching" in r.text:
-                    break
-                jobs.extend(_parse_linkedin(r.text, remote_hint=want_remote))
-                if len(jobs) >= max_jobs:
-                    return jobs[:max_jobs], f"{len(jobs)} jobs"
-                time.sleep(0.6)
+            # country list (international profile) rotates; else the single location
+            targets = _pick_locations(prof.locations) or [prof.location or s.location]
+            for loc in targets:
+                for page in range(pages):
+                    params = {
+                        "keywords": kw,
+                        "location": loc,
+                        "start": page * 10,
+                    }
+                    if want_remote:
+                        params["f_WT"] = "2"          # 2 = Remote
+                    url = f"{base}?{urlencode(params)}"
+                    r = sess.get(url, timeout=TIMEOUT)
+                    if r.status_code != 200 or "No matching" in r.text:
+                        break
+                    jobs.extend(_parse_linkedin(r.text, remote_hint=want_remote))
+                    if len(jobs) >= max_jobs:
+                        return jobs[:max_jobs], f"{len(jobs)} jobs"
+                    time.sleep(0.6)
         return jobs[:max_jobs], f"{len(jobs)} jobs"
     except Exception as exc:                      # noqa: BLE001
         return jobs, f"error: {type(exc).__name__}"
