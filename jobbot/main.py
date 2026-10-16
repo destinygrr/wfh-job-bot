@@ -21,7 +21,7 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
     from jobbot import digest, notify, scoring, sources, store, settings as cfgmod
 else:
-    from . import digest, notify, scoring, sources, store, settings as cfgmod
+    from . import digest, gmail_check, notify, scoring, sources, store, settings as cfgmod
 
 
 def _age_ok(job, max_days: int) -> bool:
@@ -46,6 +46,10 @@ def _hard_excluded(job, flt, remote_only: bool = True, s=None) -> bool:
             return True
     # your personal block list (config.yaml -> filters: blocklist)
     if s is not None and scoring.blocked_by_user(s, job):
+        return True
+    # international jobs that need local work authorisation (US citizen / GC / etc.)
+    if flt.get("drop_authorization_required", True) and any(
+            "work authorization" in f for f in job.red_flags):
         return True
     if flt.get("exclude_fresher_only", True) and any("Freshers-only" in f for f in job.red_flags):
         return True
@@ -136,6 +140,9 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
         if j.relevant and j.required_location
         and j.required_location.lower() not in " ".join([j.location, j.title, j.tags]).lower())
 
+    auth_blocked = sum(1 for j in unique.values() if j.relevant and any(
+        "work authorization" in f for f in j.red_flags))
+
     onsite_dropped = sum(
         1 for j in unique.values()
         if j.relevant and any("not clearly work-from-home" in f for f in j.red_flags))
@@ -160,6 +167,7 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
         "onsite_dropped": onsite_dropped,
         "blocklisted": blocked_by_list,
         "outside_city": outside_city,
+        "auth_blocked": auth_blocked,
         "queued_next": len(overflow),
         "matched_role": sum(1 for j in unique.values() if j.relevant),
         "total_seen": len(st),
@@ -199,9 +207,18 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
         st.mark([k for k in unique.keys() if k not in keep])
         st.save()
 
+    # ---------------- Gmail job-email alerts ----------------
+    if not dry_run and (s.gmail or {}).get("enabled", False):
+        emails, gnote = gmail_check.fetch_job_emails(s)
+        report["gmail"] = gnote
+        if emails:
+            report["gmail_notify"] = notify.send_all(s, gmail_check.format_email_alert(emails))
+    elif not dry_run:
+        report["gmail"] = "disabled"
+
     digest_set = fresh if fresh else alert_batch
-    md = digest.build_markdown(digest_set, list(unique.values()), report, min_trust=min_trust)
-    html = digest.build_html(digest_set, list(unique.values()), report, min_trust=min_trust)
+    md = digest.build_markdown(s, digest_set, list(unique.values()), report, min_trust=min_trust)
+    html = digest.build_html(s, digest_set, list(unique.values()), report, min_trust=min_trust)
     if not dry_run:
         digest.write_files(s, html, md)
         rp = s.path("data/last_run.json")
@@ -217,12 +234,18 @@ def run(config_path: str | None = None, dry_run: bool = False, test: bool = Fals
         print(f"  blocked by your list: {report['blocklisted']}")
     if report["outside_city"]:
         print(f"  dropped (outside your city rule): {report['outside_city']}")
+    if report["auth_blocked"]:
+        print(f"  dropped (need local work authorization abroad): {report['auth_blocked']}")
     print(f"  NEW matching : {report['new_matching']}   (wrong-role ignored: {report['irrelevant']})")
     if report["queued_next"]:
         print(f"  queued next  : {report['queued_next']}  (above threshold, will be alerted in the NEXT run)")
     print(f"  alerted      : {report['alerted']}   (below threshold: {report['below_threshold']})")
     for k, v in (report.get("notify") or {}).items():
         print(f"  {k:<12} : {v}")
+    if report.get("gmail"):
+        print(f"  gmail        : {report['gmail']}")
+        for k, v in (report.get("gmail_notify") or {}).items():
+            print(f"    {k:<10} : {v}")
     if alert_batch:
         print("\n  Top new jobs:")
         for j in alert_batch[:5]:
