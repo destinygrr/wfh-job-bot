@@ -94,6 +94,30 @@ profiles:
       - "logistics-jobs"
       - "material-management-jobs"
 
+  # 7) INTERNATIONAL WORK-FROM-HOME  (US, Canada, Australia, Europe, Singapore, UAE)
+  #    Remote jobs only. Jobs that need local work authorisation
+  #    ("US citizen", "green card", "must reside in UK"...) are dropped automatically.
+  - name: "International WFH"
+    enabled: true
+    locations:                   # searched 2 at a time, rotating each run
+      - "United States"
+      - "Canada"
+      - "Australia"
+      - "United Kingdom"
+      - "Germany"
+      - "Netherlands"
+      - "Singapore"
+      - "United Arab Emirates"
+    keywords:
+      - "AI trainer"
+      - "data annotation"
+      - "AI testing"
+      - "software testing"
+      - "online tutor"
+      - "document verification"
+      - "equity research"
+    apna_categories: []          # apna is India-only, so nothing here
+
 # ---- WHERE ------------------------------------------------
 location: "India"                # default for every job type (School Teacher overrides its own)
 remote_only: true                # true = work-from-home only, for all types except those
@@ -116,6 +140,7 @@ filters:
   min_salary_lpa: 0              # 0 = don't filter by salary, else e.g. 4
   max_age_days: 30               # only jobs posted in the last N days
   max_jobs_per_source: 200       # cap so a run stays fast
+  drop_authorization_required: true   # drop foreign jobs needing US/UK/EU work permits
 
   # YOUR PERSONAL BLOCK LIST ------------------------------------------------
   # Any job whose TITLE / COMPANY / LOCATION contains one of these words is
@@ -128,6 +153,58 @@ filters:
     # - "field sales"         # nothing needing field visits
     # - "telecaller"
     # - "night shift"
+
+# ---- YOUR DETAILS (used to write ready-to-paste cover notes) ----
+applicant:
+  name: "Gnyanneshwar Rao"
+  experience: "20+ years"        # e.g. "15 years", "over 20 years"
+  highlights:                    # your strengths, comma-separated inside the note
+    - "procurement, supply chain and operations"
+    - "software testing and AI evaluation"
+  skill_map:                     # which skill line to use for each job type
+    default:  "procurement, supply chain, sourcing and operations"
+    Teaching: "teaching, tutoring and mentoring students"
+    AI:       "software testing, QA and AI model evaluation"
+    KYC:      "documentation, KYC verification and compliance"
+    Stock:    "equity research, financial analysis and derivatives"
+    International: "remote collaboration, AI data work and analysis"
+
+# ---- GMAIL JOB-EMAIL ALERTS --------------------------------
+# WhatsApp alerts for job-related emails in your Gmail inbox.
+# Setup: Google Account -> Security -> 2-Step Verification ON, then
+# https://myaccount.google.com/apppasswords -> create "wfh-bot" -> copy the
+# 16-character password into the GitHub secret GMAIL_APP_PASSWORD.
+gmail:
+  enabled: true
+  lookback_days: 3             # only look at emails from the last N days
+  max_per_alert: 8             # how many emails per WhatsApp message
+  job_senders:                 # emails from these domains are treated as job-related
+    - "linkedin.com"
+    - "naukri.com"
+    - "apna.co"
+    - "indeed.com"
+    - "foundit.in"
+    - "hirist.com"
+    - "instahyre.com"
+    - "glassdoor.com"
+    - "iimjobs.com"
+    - "naukrigulf.com"
+    - "timesjobs.com"
+  subject_keywords:            # ...and any email whose subject contains these words
+    - "job"
+    - "application"
+    - "interview"
+    - "opportunity"
+    - "recruiter"
+    - "hiring"
+    - "shortlist"
+    - "vacancy"
+    - "opening"
+  exclude_subjects:            # never alert about these
+    - "newsletter"
+    - "webinar"
+    - "promotion"
+    - "course"
 
 # ---- ALERT SETTINGS ---------------------------------------
 alerts:
