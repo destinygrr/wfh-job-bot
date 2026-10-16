@@ -1,11 +1,15 @@
-# WFH Job Bot — digest 15 Oct 2026, 05:41 PM
+# WFH Job Bot — digest 16 Oct 2026, 05:36 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 241 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 258 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 91/100 | ai trainer | ZORDAN CX Solutions | Shahjahanpur, Uttar Pradesh, India | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/4479114791) |
+| 2 | 83/100 | AI/ML Trainer | Client of IndiHire | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/4473437850) |
 
 ## Source status
-- **linkedin**: 70 jobs
-- **apna**: 212 jobs
+- **linkedin**: 100 jobs
+- **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
 - **jobicy**: 12 jobs
