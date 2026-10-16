@@ -51,7 +51,8 @@ class Profile:
     keywords: List[str] = field(default_factory=list)
     apna_categories: List[str] = field(default_factory=list)
     enabled: bool = True          # "enabled: false" switches this whole job type OFF
-    location: str = ""            # e.g. "Hyderabad" = only jobs in that city for this type
+    location: str = ""            # e.g. "Hyderabad" = HARD requirement: only jobs in that city
+    locations: List[str] = field(default_factory=list)   # search targets (rotated), e.g. ["United States","Canada"]
     allow_onsite: bool = False    # true = on-site jobs allowed for this type (e.g. school teacher)
 
 
@@ -63,6 +64,13 @@ class Settings:
     sources: Dict[str, bool] = field(default_factory=dict)
     filters: Dict[str, Any] = field(default_factory=dict)
     alerts: Dict[str, Any] = field(default_factory=dict)
+    gmail: Dict[str, Any] = field(default_factory=dict)
+    applicant: Dict[str, Any] = field(default_factory=dict)
+
+    # gmail secrets
+    gmail_user: str = ""
+    gmail_app_password: str = ""
+
     state_file: str = "data/seen_jobs.json"
     digest_html: str = "data/latest_digest.html"
     digest_md: str = "data/latest_digest.md"
@@ -81,6 +89,7 @@ class Settings:
     greenapi_id: str = ""
     greenapi_token: str = ""
     greenapi_chat_id: str = ""
+    greenapi_api_url: str = ""      # optional: copy "apiUrl" from the Green API console
 
     smtp_host: str = ""
     smtp_port: int = 587
@@ -151,6 +160,7 @@ def load_settings(config_path: str | os.PathLike | None = None) -> Settings:
             apna_categories=[str(k) for k in p.get("apna_categories", [])],
             enabled=bool(p.get("enabled", True)),
             location=str(p.get("location", "") or ""),
+            locations=[str(x) for x in (p.get("locations") or [])],
             allow_onsite=bool(p.get("allow_onsite", False)),
         )
         for p in raw.get("profiles", [])
@@ -175,11 +185,16 @@ def load_settings(config_path: str | os.PathLike | None = None) -> Settings:
     s.callmebot_apikey = os.getenv("CALLMEBOT_APIKEY", "")
     s.telegram_token = os.getenv("TELEGRAM_BOT_TOKEN", "")
     s.telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID", "")
+    s.gmail = raw.get("gmail", {}) or {}
+    s.applicant = raw.get("applicant", {}) or {}
+    s.gmail_user = os.getenv("GMAIL_USER", "")
+    s.gmail_app_password = os.getenv("GMAIL_APP_PASSWORD", "")
     s.ntfy_topic = os.getenv("NTFY_TOPIC", "")
     s.ntfy_server = os.getenv("NTFY_SERVER", "https://ntfy.sh")
     s.greenapi_id = os.getenv("GREENAPI_ID_INSTANCE", "")
     s.greenapi_token = os.getenv("GREENAPI_API_TOKEN", "")
     s.greenapi_chat_id = os.getenv("GREENAPI_CHAT_ID", "")
+    s.greenapi_api_url = os.getenv("GREENAPI_API_URL", "")
     s.jooble_key = os.getenv("JOOBLE_API_KEY", "")
     s.smtp_host = os.getenv("SMTP_HOST", "")
     s.smtp_port = int(os.getenv("SMTP_PORT", "587") or 587)
