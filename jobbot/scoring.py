@@ -72,6 +72,18 @@ BAD_LOW_SIGNALS = [
     (r"\btarget\s*based\b|\battractive\s*incentives?\b", "target/incentive heavy", -8),
 ]
 
+AUTH_REQUIRED_PATTERNS = [
+    r"authori[sz]ed to work in (the )?(us|u\.s\.|united states|uk|canada|australia|eu|europe)",
+    r"must be (a )?(us|u\.s\.|united states|canadian|australian|uk|eu) (citizen|resident|national)",
+    r"must (reside|be (based|located)) in (the )?(us|u\.s\.|united states|uk|canada|australia|eu|europe)",
+    r"right to work in (the )?(uk|us|united states|canada|australia|eu|europe)",
+    r"visa sponsorship (is )?not (available|provided|offered)",
+    r"(green card|gc) (holder|required|only)",
+    r"security clearance (required|needed)",
+    r"only (candidates|applicants) (based|located|residing) in",
+    r"work authori[sz]ation (in|for) (the )?(us|united states|uk|canada|australia|eu)",
+]
+
 WORK_MODE_OFFICE = re.compile(r"\b(work\s*from\s*office|wfo|on[\s-]*site|in[\s-]*office|walk[\s-]*in)\b", re.I)
 WORK_MODE_HOME = re.compile(r"\b(work\s*from\s*home|wfh|remote|work\s*at\s*home|anywhere)\b", re.I)
 
@@ -223,6 +235,12 @@ class Job:
             else:
                 score -= 25
                 flags.append("not clearly work-from-home")
+
+        for pat in AUTH_REQUIRED_PATTERNS:
+            if re.search(pat, low, re.I):
+                flags.append("needs local work authorization")
+                score -= 10
+                break
 
         for pat, why in SCAM_PATTERNS:
             if re.search(pat, low, re.I):
