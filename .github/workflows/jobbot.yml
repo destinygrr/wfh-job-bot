@@ -55,6 +55,9 @@ jobs:
           GREENAPI_ID_INSTANCE: ${{ secrets.GREENAPI_ID_INSTANCE }}
           GREENAPI_API_TOKEN:   ${{ secrets.GREENAPI_API_TOKEN }}
           GREENAPI_CHAT_ID:     ${{ secrets.GREENAPI_CHAT_ID }}
+          GREENAPI_API_URL:     ${{ secrets.GREENAPI_API_URL }}
+          GMAIL_USER:           ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD:   ${{ secrets.GMAIL_APP_PASSWORD }}
           NTFY_TOPIC:           ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER:          ${{ secrets.NTFY_SERVER }}
           TELEGRAM_BOT_TOKEN:   ${{ secrets.TELEGRAM_BOT_TOKEN }}
