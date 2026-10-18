@@ -1,30 +1,42 @@
-# WFH Job Bot — digest 18 Oct 2026, 05:32 AM
+# WFH Job Bot — digest 18 Oct 2026, 11:59 AM
 
-**2 new job(s)** matching AI-Testing / Teaching from 263 fetched.
+**3 new job(s)** matching AI-Testing / Teaching from 317 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 95/100 | Purchase Manager | Recon Technologies | Gagilapur, Hyderabad | ₹35k-50k/yr | Apna | [Apply](https://apna.co/job/hyderabad/purchase-manager-992635096) |
-| 2 | 75/100 | Maths Online teacher 10K Fixed | ManavtaClass | Madhya Pradesh, India | ~₹1.2 LPA | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/maths-online-teacher-10k-fixed-at-manavtaclass-4478211070) |
+| 1 | 93/100 | Automation Testing + AI Model Assurance | Cognizant | Dubai, Dubai, United Arab Emirates | - | LinkedIn | [Apply](https://ae.linkedin.com/jobs/view/automation-testing-%2B-ai-model-assurance-at-cognizant-4479160644) |
+| 2 | 83/100 | AI Trainer | SWOT Management | India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-trainer-at-swot-management-4478213020) |
+| 3 | 83/100 | Full Time AI Trainer | HUSTLE INSTITUTE PTE. LTD. | Singapore, Singapore | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/4474694052) |
 
 ## Ready-to-paste cover notes
 
-**1) Purchase Manager — Recon Technologies**
+**1) Automation Testing + AI Model Assurance — Cognizant**
 ```
 Dear Hiring Team,
-I am applying for the Purchase Manager role at Recon Technologies.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
+I am applying for the Automation Testing + AI Model Assurance role at Cognizant.
+I bring 20+ years of experience in remote collaboration, AI data work and analysis.
+I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
-**2) Maths Online teacher 10K Fixed — ManavtaClass**
+**2) AI Trainer — SWOT Management**
 ```
 Dear Hiring Team,
-I am applying for the Maths Online teacher 10K Fixed role at ManavtaClass.
-I bring 20+ years of experience in teaching, tutoring and mentoring students.
+I am applying for the AI Trainer role at SWOT Management.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**3) Full Time AI Trainer — HUSTLE INSTITUTE PTE. LTD.**
+```
+Dear Hiring Team,
+I am applying for the Full Time AI Trainer role at HUSTLE INSTITUTE PTE. LTD..
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
@@ -32,11 +44,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 160 jobs
 - **apna**: 209 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 10 jobs
+- **jobicy**: 8 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
