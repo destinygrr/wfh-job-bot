@@ -1,18 +1,18 @@
-# WFH Job Bot — digest 19 Oct 2026, 08:56 PM
+# WFH Job Bot — digest 20 Oct 2026, 05:45 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 254 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 253 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | AI Language Model Trainer | HiredBuddy | California, United States | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/ai-language-model-trainer-at-hiredbuddy-4479931518) |
+| 1 | 91/100 | Fund Services.KYC/AML Senior Analyst | The Citco Group Limited | Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/fund-services-kyc-aml-senior-analyst-at-the-citco-group-limited-4476651909) |
 
 ## Ready-to-paste cover notes
 
-**1) AI Language Model Trainer — HiredBuddy**
+**1) Fund Services.KYC/AML Senior Analyst — The Citco Group Limited**
 ```
 Dear Hiring Team,
-I am applying for the AI Language Model Trainer role at HiredBuddy.
-I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am applying for the Fund Services.KYC/AML Senior Analyst role at The Citco Group Limited.
+I bring 20+ years of experience in documentation, KYC verification and compliance.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
@@ -20,7 +20,7 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 90 jobs
+- **linkedin**: 80 jobs
 - **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
