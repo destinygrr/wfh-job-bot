@@ -1,30 +1,30 @@
-# WFH Job Bot — digest 21 Oct 2026, 12:48 PM
+# WFH Job Bot — digest 21 Oct 2026, 05:57 PM
 
-**2 new job(s)** matching AI-Testing / Teaching from 259 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 324 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 99/100 | Bengali AI Translation Trainer | Welocalize India Llp | Work From Home | ₹50k-50k/yr | Apna | [Apply](https://apna.co/job/kolkata-calcutta-region/bengali-ai-translation-trainer-784552582) |
-| 2 | 83/100 | AI Trainer, Entry Level | Jobright.ai | United States | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/ai-trainer-entry-level-at-jobright-ai-4471529937) |
+| 1 | 83/100 | Online Teacher, IG Physics | Crimson Global Academy | Canada Bay, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/online-teacher-ig-physics-at-crimson-global-academy-4472494155) |
+| 2 | 83/100 | Online Teacher, US Diploma Project Management | Crimson Global Academy | Allendale East, South Australia, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/online-teacher-us-diploma-project-management-at-crimson-global-academy-4471841941) |
 
 ## Ready-to-paste cover notes
 
-**1) Bengali AI Translation Trainer — Welocalize India Llp**
+**1) Online Teacher, IG Physics — Crimson Global Academy**
 ```
 Dear Hiring Team,
-I am applying for the Bengali AI Translation Trainer role at Welocalize India Llp.
-I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am applying for the Online Teacher, IG Physics role at Crimson Global Academy.
+I bring 20+ years of experience in teaching, tutoring and mentoring students.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
-**2) AI Trainer, Entry Level — Jobright.ai**
+**2) Online Teacher, US Diploma Project Management — Crimson Global Academy**
 ```
 Dear Hiring Team,
-I am applying for the AI Trainer, Entry Level role at Jobright.ai.
-I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am applying for the Online Teacher, US Diploma Project Management role at Crimson Global Academy.
+I bring 20+ years of experience in teaching, tutoring and mentoring students.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
@@ -32,11 +32,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 170 jobs
 - **apna**: 207 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 7 jobs
+- **jobicy**: 8 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
