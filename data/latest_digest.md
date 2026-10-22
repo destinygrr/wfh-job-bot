@@ -1,27 +1,39 @@
-# WFH Job Bot — digest 22 Oct 2026, 12:52 PM
+# WFH Job Bot — digest 22 Oct 2026, 05:54 PM
 
-**1 new job(s)** matching AI-Testing / Teaching from 338 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 337 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 75/100 | Strategic Sourcing Specialist | AST SpaceMobile | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/strategic-sourcing-specialist-at-ast-spacemobile-4482474110) |
+| 1 | 99/100 | Online Tutor | Smart Preceptors Llp | Work From Home | - | Apna | [Apply](https://apna.co/job/dehradun-region/online-tutor-262267605) |
+| 2 | 83/100 | KYC Analyst | NIYEAHMA | Ahmedabad, Gujarat, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/kyc-analyst-at-niyeahma-4479413726) |
 
 ## Ready-to-paste cover notes
 
-**1) Strategic Sourcing Specialist — AST SpaceMobile**
+**1) Online Tutor — Smart Preceptors Llp**
 ```
 Dear Hiring Team,
-I am applying for the Strategic Sourcing Specialist role at AST SpaceMobile.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
+I am applying for the Online Tutor role at Smart Preceptors Llp.
+I bring 20+ years of experience in teaching, tutoring and mentoring students.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**2) KYC Analyst — NIYEAHMA**
+```
+Dear Hiring Team,
+I am applying for the KYC Analyst role at NIYEAHMA.
+I bring 20+ years of experience in documentation, KYC verification and compliance.
+I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 200 jobs
-- **apna**: 209 jobs
+- **linkedin**: 190 jobs
+- **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
 - **jobicy**: 6 jobs
