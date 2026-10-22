@@ -1,14 +1,30 @@
-# WFH Job Bot — digest 22 Oct 2026, 05:52 AM
+# WFH Job Bot — digest 22 Oct 2026, 12:52 PM
 
-**0 new job(s)** matching AI-Testing / Teaching from 257 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 338 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 75/100 | Strategic Sourcing Specialist | AST SpaceMobile | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/strategic-sourcing-specialist-at-ast-spacemobile-4482474110) |
+
+## Ready-to-paste cover notes
+
+**1) Strategic Sourcing Specialist — AST SpaceMobile**
+```
+Dear Hiring Team,
+I am applying for the Strategic Sourcing Specialist role at AST SpaceMobile.
+I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
+I am based in Hyderabad and available for an in-person interview.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 200 jobs
 - **apna**: 209 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 5 jobs
+- **jobicy**: 6 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
