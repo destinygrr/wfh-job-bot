@@ -1,30 +1,14 @@
-# WFH Job Bot — digest 23 Oct 2026, 12:30 PM
+# WFH Job Bot — digest 23 Oct 2026, 05:47 PM
 
-**1 new job(s)** matching AI-Testing / Teaching from 267 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 232 fetched.
 
-| # | Trust | Role | Company | Location | Pay | Source | Apply |
-|---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 85/100 | Supply Chain Manager II, ROC Reactive Scheduling | Amazon | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/supply-chain-manager-ii-roc-reactive-scheduling-at-amazon-4474371312) |
-
-## Ready-to-paste cover notes
-
-**1) Supply Chain Manager II, ROC Reactive Scheduling — Amazon**
-```
-Dear Hiring Team,
-I am applying for the Supply Chain Manager II, ROC Reactive Scheduling role at Amazon.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
 
 ## Source status
-- **linkedin**: 110 jobs
+- **linkedin**: 70 jobs
 - **apna**: 208 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 7 jobs
+- **jobicy**: 6 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
