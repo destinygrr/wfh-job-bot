@@ -1,29 +1,17 @@
-# WFH Job Bot — digest 23 Oct 2026, 05:50 AM
+# WFH Job Bot — digest 23 Oct 2026, 12:30 PM
 
-**2 new job(s)** matching AI-Testing / Teaching from 345 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 267 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Science Teacher – Online (GCSE | IGCSE | AS & A Level) | Sehyog Academy UK | Bawana, Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/science-teacher-%E2%80%93-online-gcse-igcse-as-a-level-at-sehyog-academy-uk-4482741941) |
-| 2 | 75/100 | Physics Teacher | Nord Anglia International School Rotterdam | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/physics-teacher-at-nord-anglia-international-school-rotterdam-4482464879) |
+| 1 | 85/100 | Supply Chain Manager II, ROC Reactive Scheduling | Amazon | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/supply-chain-manager-ii-roc-reactive-scheduling-at-amazon-4474371312) |
 
 ## Ready-to-paste cover notes
 
-**1) Science Teacher – Online (GCSE | IGCSE | AS & A Level) — Sehyog Academy UK**
+**1) Supply Chain Manager II, ROC Reactive Scheduling — Amazon**
 ```
 Dear Hiring Team,
-I am applying for the Science Teacher – Online (GCSE | IGCSE | AS & A Level) role at Sehyog Academy UK.
-I bring 20+ years of experience in teaching, tutoring and mentoring students.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**2) Physics Teacher — Nord Anglia International School Rotterdam**
-```
-Dear Hiring Team,
-I am applying for the Physics Teacher role at Nord Anglia International School Rotterdam.
+I am applying for the Supply Chain Manager II, ROC Reactive Scheduling role at Amazon.
 I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
 I am based in Hyderabad and available for an in-person interview.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -32,11 +20,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 200 jobs
+- **linkedin**: 110 jobs
 - **apna**: 208 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 4 jobs
+- **jobicy**: 7 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
