@@ -1,14 +1,30 @@
-# WFH Job Bot — digest 24 Oct 2026, 05:33 AM
+# WFH Job Bot — digest 24 Oct 2026, 11:54 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 330 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 233 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 100/100 | AI Trainer - Video Annotation | iMerit Technology | Worldwide | 70K-80K | Remotive | [Apply](https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161) |
+
+## Ready-to-paste cover notes
+
+**1) AI Trainer - Video Annotation — iMerit Technology**
+```
+Dear Hiring Team,
+I am applying for the AI Trainer - Video Annotation role at iMerit Technology.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 200 jobs
+- **linkedin**: 50 jobs
 - **apna**: 208 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 48 jobs
-- **jobicy**: 4 jobs
+- **remotive**: 56 jobs
+- **jobicy**: 22 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
