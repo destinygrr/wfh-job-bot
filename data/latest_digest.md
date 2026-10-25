@@ -1,14 +1,30 @@
-# WFH Job Bot — digest 24 Oct 2026, 04:29 PM
+# WFH Job Bot — digest 25 Oct 2026, 05:49 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 229 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 262 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 83/100 | Derivatives Analyst | Mansukh Securities & Finance Ltd. | Mumbai, Maharashtra, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/derivatives-analyst-at-mansukh-securities-finance-ltd-4481068866) |
+
+## Ready-to-paste cover notes
+
+**1) Derivatives Analyst — Mansukh Securities & Finance Ltd.**
+```
+Dear Hiring Team,
+I am applying for the Derivatives Analyst role at Mansukh Securities & Finance Ltd..
+I bring 20+ years of experience in equity research, financial analysis and derivatives.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 50 jobs
+- **linkedin**: 100 jobs
 - **apna**: 208 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 18 jobs
+- **jobicy**: 11 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
