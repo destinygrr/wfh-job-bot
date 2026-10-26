@@ -1,17 +1,17 @@
-# WFH Job Bot — digest 25 Oct 2026, 05:00 PM
+# WFH Job Bot — digest 26 Oct 2026, 05:52 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 261 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 258 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 75/100 | English Teacher (Primary) | Oakridge International School, Bachupally | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/english-teacher-primary-at-oakridge-international-school-bachupally-4467508210) |
+| 1 | 75/100 | Teacher | Master's Concept High School | Malakpet, Hyderabad | ₹15k-20k/yr | Apna | [Apply](https://apna.co/job/hyderabad/teacher-503140996) |
 
 ## Ready-to-paste cover notes
 
-**1) English Teacher (Primary) — Oakridge International School, Bachupally**
+**1) Teacher — Master's Concept High School**
 ```
 Dear Hiring Team,
-I am applying for the English Teacher (Primary) role at Oakridge International School, Bachupally.
+I am applying for the Teacher role at Master's Concept High School.
 I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
 I am based in Hyderabad and available for an in-person interview.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -21,10 +21,10 @@ Gnyanneshwar Rao
 
 ## Source status
 - **linkedin**: 100 jobs
-- **apna**: 208 jobs
+- **apna**: 209 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 11 jobs
+- **jobicy**: 10 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
