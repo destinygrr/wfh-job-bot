@@ -1,17 +1,29 @@
-# WFH Job Bot — digest 27 Oct 2026, 06:05 AM
+# WFH Job Bot — digest 27 Oct 2026, 01:03 PM
 
-**1 new job(s)** matching AI-Testing / Teaching from 207 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 246 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 75/100 | Manager - Global Procurement | PepsiCo | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/manager-global-procurement-at-pepsico-4450175025) |
+| 1 | 83/100 | AI Product Trainer | Thomson Reuters | Melbourne, Victoria, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/ai-product-trainer-at-thomson-reuters-4483621398) |
+| 2 | 75/100 | Teacher | Sai Chaitanya Model School | Hyderabad | ₹15k-30k/yr | Apna | [Apply](https://apna.co/job/hyderabad/teacher-398486430) |
 
 ## Ready-to-paste cover notes
 
-**1) Manager - Global Procurement — PepsiCo**
+**1) AI Product Trainer — Thomson Reuters**
 ```
 Dear Hiring Team,
-I am applying for the Manager - Global Procurement role at PepsiCo.
+I am applying for the AI Product Trainer role at Thomson Reuters.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**2) Teacher — Sai Chaitanya Model School**
+```
+Dear Hiring Team,
+I am applying for the Teacher role at Sai Chaitanya Model School.
 I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
 I am based in Hyderabad and available for an in-person interview.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -20,11 +32,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 40 jobs
-- **apna**: 208 jobs
+- **linkedin**: 90 jobs
+- **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 6 jobs
+- **jobicy**: 5 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
