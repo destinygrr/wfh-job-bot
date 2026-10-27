@@ -1,11 +1,27 @@
-# WFH Job Bot — digest 26 Oct 2026, 08:57 PM
+# WFH Job Bot — digest 27 Oct 2026, 06:05 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 255 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 207 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 75/100 | Manager - Global Procurement | PepsiCo | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/manager-global-procurement-at-pepsico-4450175025) |
+
+## Ready-to-paste cover notes
+
+**1) Manager - Global Procurement — PepsiCo**
+```
+Dear Hiring Team,
+I am applying for the Manager - Global Procurement role at PepsiCo.
+I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
+I am based in Hyderabad and available for an in-person interview.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 100 jobs
-- **apna**: 210 jobs
+- **linkedin**: 40 jobs
+- **apna**: 208 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
 - **jobicy**: 6 jobs
