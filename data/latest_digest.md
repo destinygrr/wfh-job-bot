@@ -1,14 +1,14 @@
-# WFH Job Bot — digest 28 Oct 2026, 08:52 PM
+# WFH Job Bot — digest 29 Oct 2026, 06:51 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 255 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 258 fetched.
 
 
 ## Source status
 - **linkedin**: 110 jobs
-- **apna**: 211 jobs
+- **apna**: 212 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 64 jobs
-- **jobicy**: 4 jobs
+- **jobicy**: 3 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
