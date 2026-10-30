@@ -1,42 +1,17 @@
-# WFH Job Bot — digest 30 Oct 2026, 01:55 PM
+# WFH Job Bot — digest 30 Oct 2026, 08:33 PM
 
-**4 new job(s)** matching AI-Testing / Teaching from 334 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 247 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Verification Specialist | Orbit Verify | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/verification-specialist-at-orbit-verify-4483436485) |
-| 2 | 83/100 | PROCUREMENT EXECUTIVE | Genesis Poweronics India Pvt Ltd. | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/procurement-executive-at-genesis-poweronics-india-pvt-ltd-4483443184) |
-| 3 | 83/100 | AI & Data Apprenticeship Trainer / Coach | Pertemps Network Group | England, United Kingdom | - | LinkedIn | [Apply](https://uk.linkedin.com/jobs/view/ai-data-apprenticeship-trainer-coach-at-pertemps-network-group-4483037376) |
-| 4 | 75/100 | Senior Manager, Global Procurement (Materials) | Quince | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/senior-manager-global-procurement-materials-at-quince-4483207329) |
+| 1 | 83/100 | AI Trainer | Okta | Toronto, Ontario, Canada | - | LinkedIn | [Apply](https://ca.linkedin.com/jobs/view/ai-trainer-at-okta-4456534138) |
 
 ## Ready-to-paste cover notes
 
-**1) Verification Specialist — Orbit Verify**
+**1) AI Trainer — Okta**
 ```
 Dear Hiring Team,
-I am applying for the Verification Specialist role at Orbit Verify.
-I bring 20+ years of experience in documentation, KYC verification and compliance.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**2) PROCUREMENT EXECUTIVE — Genesis Poweronics India Pvt Ltd.**
-```
-Dear Hiring Team,
-I am applying for the PROCUREMENT EXECUTIVE role at Genesis Poweronics India Pvt Ltd..
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**3) AI & Data Apprenticeship Trainer / Coach — Pertemps Network Group**
-```
-Dear Hiring Team,
-I am applying for the AI & Data Apprenticeship Trainer / Coach role at Pertemps Network Group.
+I am applying for the AI Trainer role at Okta.
 I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -44,19 +19,8 @@ Regards,
 Gnyanneshwar Rao
 ```
 
-**4) Senior Manager, Global Procurement (Materials) — Quince**
-```
-Dear Hiring Team,
-I am applying for the Senior Manager, Global Procurement (Materials) role at Quince.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
 ## Source status
-- **linkedin**: 200 jobs
+- **linkedin**: 100 jobs
 - **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 64 jobs
