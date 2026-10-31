@@ -1,17 +1,29 @@
-# WFH Job Bot — digest 30 Oct 2026, 08:33 PM
+# WFH Job Bot — digest 31 Oct 2026, 06:47 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 247 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 313 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | AI Trainer | Okta | Toronto, Ontario, Canada | - | LinkedIn | [Apply](https://ca.linkedin.com/jobs/view/ai-trainer-at-okta-4456534138) |
+| 1 | 100/100 | Online Tutor | Skilltero Private Limited | Work From Home | ₹20k-100k/yr | Apna | [Apply](https://apna.co/job/hyderabad-region/online-tutor-689833696) |
+| 2 | 83/100 | AI/ML Trainer (1-2 yrs) | MindBrain | Bhubaneswar, Odisha, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-ml-trainer-1-2-yrs-at-mindbrain-4485135347) |
 
 ## Ready-to-paste cover notes
 
-**1) AI Trainer — Okta**
+**1) Online Tutor — Skilltero Private Limited**
 ```
 Dear Hiring Team,
-I am applying for the AI Trainer role at Okta.
+I am applying for the Online Tutor role at Skilltero Private Limited.
+I bring 20+ years of experience in teaching, tutoring and mentoring students.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**2) AI/ML Trainer (1-2 yrs) — MindBrain**
+```
+Dear Hiring Team,
+I am applying for the AI/ML Trainer (1-2 yrs) role at MindBrain.
 I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -20,7 +32,7 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 180 jobs
 - **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 64 jobs
