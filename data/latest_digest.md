@@ -1,6 +1,6 @@
-# WFH Job Bot — digest 01 Nov 2026, 07:14 AM
+# WFH Job Bot — digest 01 Nov 2026, 04:39 PM
 
-**0 new job(s)** matching AI-Testing / Teaching from 246 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 245 fetched.
 
 
 ## Source status
