@@ -1,10 +1,26 @@
-# WFH Job Bot — digest 01 Nov 2026, 04:39 PM
+# WFH Job Bot — digest 02 Nov 2026, 07:28 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 245 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 237 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 83/100 | KYC Executive | GTS Consulting | Delhi, Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/kyc-executive-at-gts-consulting-4484406808) |
+
+## Ready-to-paste cover notes
+
+**1) KYC Executive — GTS Consulting**
+```
+Dear Hiring Team,
+I am applying for the KYC Executive role at GTS Consulting.
+I bring 20+ years of experience in documentation, KYC verification and compliance.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 80 jobs
 - **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 72 jobs
