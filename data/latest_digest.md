@@ -1,20 +1,31 @@
-# WFH Job Bot — digest 02 Nov 2026, 08:04 PM
+# WFH Job Bot — digest 03 Nov 2026, 07:43 AM
 
-**4 new job(s)** matching AI-Testing / Teaching from 254 fetched.
+**4 new job(s)** matching AI-Testing / Teaching from 340 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | KYC/Screening Analyst (Junior) | Deblock | Chennai, Tamil Nadu, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/kyc-screening-analyst-junior-at-deblock-4486156898) |
-| 2 | 83/100 | Verification Specialist | Orbit Verify | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/verification-specialist-at-orbit-verify-4484363325) |
-| 3 | 83/100 | KYC/Screening Analyst (Junior) | Deblock | Bengaluru, Karnataka, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/kyc-screening-analyst-junior-at-deblock-4486170170) |
-| 4 | 75/100 | EVS Teacher | Tatva Global School | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/evs-teacher-at-tatva-global-school-4485483466) |
+| 1 | 99/100 | Gujarati AI Translation Trainer | Welocalize India LLP | Work From Home | ₹50k-50k/yr | Apna | [Apply](https://apna.co/job/ahmedabad-region/gujarati-ai-translation-trainer-424529549) |
+| 2 | 83/100 | KYC & Bank Verification Analyst - Commodities | Randstad Singapore | Singapore, Singapore | - | LinkedIn | [Apply](https://sg.linkedin.com/jobs/view/kyc-bank-verification-analyst-commodities-at-randstad-singapore-4483430016) |
+| 3 | 83/100 | Senior Officer, KYC & Onboarding - IB | First Abu Dhabi Bank (FAB) | Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates | - | LinkedIn | [Apply](https://ae.linkedin.com/jobs/view/senior-officer-kyc-onboarding-ib-at-first-abu-dhabi-bank-fab-4336542815) |
+| 4 | 83/100 | KYC Operations Analyst 1, Citi Commercial Bank (UAE Nationals Only) | Citi | Dubai, Dubai, United Arab Emirates | - | LinkedIn | [Apply](https://ae.linkedin.com/jobs/view/kyc-operations-analyst-1-citi-commercial-bank-uae-nationals-only-at-citi-4480480648) |
 
 ## Ready-to-paste cover notes
 
-**1) KYC/Screening Analyst (Junior) — Deblock**
+**1) Gujarati AI Translation Trainer — Welocalize India LLP**
 ```
 Dear Hiring Team,
-I am applying for the KYC/Screening Analyst (Junior) role at Deblock.
+I am applying for the Gujarati AI Translation Trainer role at Welocalize India LLP.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**2) KYC & Bank Verification Analyst - Commodities — Randstad Singapore**
+```
+Dear Hiring Team,
+I am applying for the KYC & Bank Verification Analyst - Commodities role at Randstad Singapore.
 I bring 20+ years of experience in documentation, KYC verification and compliance.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -22,10 +33,10 @@ Regards,
 Gnyanneshwar Rao
 ```
 
-**2) Verification Specialist — Orbit Verify**
+**3) Senior Officer, KYC & Onboarding - IB — First Abu Dhabi Bank (FAB)**
 ```
 Dear Hiring Team,
-I am applying for the Verification Specialist role at Orbit Verify.
+I am applying for the Senior Officer, KYC & Onboarding - IB role at First Abu Dhabi Bank (FAB).
 I bring 20+ years of experience in documentation, KYC verification and compliance.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -33,31 +44,20 @@ Regards,
 Gnyanneshwar Rao
 ```
 
-**3) KYC/Screening Analyst (Junior) — Deblock**
+**4) KYC Operations Analyst 1, Citi Commercial Bank (UAE Nationals Only) — Citi**
 ```
 Dear Hiring Team,
-I am applying for the KYC/Screening Analyst (Junior) role at Deblock.
+I am applying for the KYC Operations Analyst 1, Citi Commercial Bank (UAE Nationals Only) role at Citi.
 I bring 20+ years of experience in documentation, KYC verification and compliance.
 I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**4) EVS Teacher — Tatva Global School**
-```
-Dear Hiring Team,
-I am applying for the EVS Teacher role at Tatva Global School.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 100 jobs
-- **apna**: 209 jobs
+- **linkedin**: 200 jobs
+- **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 72 jobs
 - **jobicy**: 1 jobs
