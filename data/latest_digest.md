@@ -1,30 +1,30 @@
-# WFH Job Bot — digest 04 Nov 2026, 05:51 PM
+# WFH Job Bot — digest 05 Nov 2026, 07:47 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 344 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 257 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Senior KYC Executive | Station Satcom | Mumbai Metropolitan Region | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/senior-kyc-executive-at-station-satcom-4486340825) |
+| 1 | 95/100 | Purchase Manager | Sri Trisul Engineering Solutions | Gachibowli, Hyderabad | ₹30k-50k/yr | Apna | [Apply](https://apna.co/job/hyderabad/purchase-manager-214354467) |
 
 ## Ready-to-paste cover notes
 
-**1) Senior KYC Executive — Station Satcom**
+**1) Purchase Manager — Sri Trisul Engineering Solutions**
 ```
 Dear Hiring Team,
-I am applying for the Senior KYC Executive role at Station Satcom.
-I bring 20+ years of experience in documentation, KYC verification and compliance.
-I am fully set up to work from home with a stable internet connection.
+I am applying for the Purchase Manager role at Sri Trisul Engineering Solutions.
+I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
+I am based in Hyderabad and available for an in-person interview.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 200 jobs
+- **linkedin**: 100 jobs
 - **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 72 jobs
-- **jobicy**: 5 jobs
+- **jobicy**: 4 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
