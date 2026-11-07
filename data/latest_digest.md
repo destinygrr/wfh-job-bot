@@ -1,31 +1,18 @@
-# WFH Job Bot — digest 06 Nov 2026, 05:16 PM
+# WFH Job Bot — digest 07 Nov 2026, 06:54 AM
 
-**4 new job(s)** matching AI-Testing / Teaching from 325 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 258 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 85/100 | Materials / Corrosion Engineer Level II | Worley | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/materials-corrosion-engineer-level-ii-at-worley-4487022423) |
-| 2 | 83/100 | AI ML Trainer | TalentOla | Greater Bengaluru Area | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-ml-trainer-at-talentola-4486995666) |
-| 3 | 83/100 | AI Trainer - STEM | Planet Pharma | Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/ai-trainer-stem-at-planet-pharma-4486980375) |
-| 4 | 75/100 | AVP, Sourcing Manager (L10) | Synchrony | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/avp-sourcing-manager-l10-at-synchrony-4488138308) |
+| 1 | 83/100 | AI Trainer & Enablement Specialist | Billennium | Essen, North Rhine-Westphalia, Germany | - | LinkedIn | [Apply](https://de.linkedin.com/jobs/view/ai-trainer-enablement-specialist-at-billennium-4487280661) |
+| 2 | 83/100 | AI Data Trainer - Dutch and English, Artificial General Intelligence - Studentjob.nl | Jobster | The Hague, South Holland, Netherlands | - | LinkedIn | [Apply](https://nl.linkedin.com/jobs/view/ai-data-trainer-dutch-and-english-artificial-general-intelligence-studentjob-nl-at-jobster-4486736966) |
 
 ## Ready-to-paste cover notes
 
-**1) Materials / Corrosion Engineer Level II — Worley**
+**1) AI Trainer & Enablement Specialist — Billennium**
 ```
 Dear Hiring Team,
-I am applying for the Materials / Corrosion Engineer Level II role at Worley.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**2) AI ML Trainer — TalentOla**
-```
-Dear Hiring Team,
-I am applying for the AI ML Trainer role at TalentOla.
+I am applying for the AI Trainer & Enablement Specialist role at Billennium.
 I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -33,34 +20,23 @@ Regards,
 Gnyanneshwar Rao
 ```
 
-**3) AI Trainer - STEM — Planet Pharma**
+**2) AI Data Trainer - Dutch and English, Artificial General Intelligence - Studentjob.nl — Jobster**
 ```
 Dear Hiring Team,
-I am applying for the AI Trainer - STEM role at Planet Pharma.
+I am applying for the AI Data Trainer - Dutch and English, Artificial General Intelligence - Studentjob.nl role at Jobster.
 I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**4) AVP, Sourcing Manager (L10) — Synchrony**
-```
-Dear Hiring Team,
-I am applying for the AVP, Sourcing Manager (L10) role at Synchrony.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 190 jobs
-- **apna**: 212 jobs
+- **linkedin**: 100 jobs
+- **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 72 jobs
-- **jobicy**: 2 jobs
+- **jobicy**: 4 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
