@@ -1,10 +1,10 @@
-# WFH Job Bot — digest 07 Nov 2026, 08:00 PM
+# WFH Job Bot — digest 08 Nov 2026, 07:00 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 255 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 240 fetched.
 
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 80 jobs
 - **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 64 jobs
