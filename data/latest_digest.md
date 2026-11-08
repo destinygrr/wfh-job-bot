@@ -1,14 +1,30 @@
-# WFH Job Bot — digest 08 Nov 2026, 07:00 AM
+# WFH Job Bot — digest 08 Nov 2026, 02:15 PM
 
-**0 new job(s)** matching AI-Testing / Teaching from 240 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 252 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 87/100 | Purchase Executive | Alcoris Enterprises | Madhapur, Hyderabad | ₹30k-60k/yr | Apna | [Apply](https://apna.co/job/hyderabad/purchase-executive-686260503) |
+
+## Ready-to-paste cover notes
+
+**1) Purchase Executive — Alcoris Enterprises**
+```
+Dear Hiring Team,
+I am applying for the Purchase Executive role at Alcoris Enterprises.
+I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
+I am based in Hyderabad and available for an in-person interview.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 80 jobs
+- **linkedin**: 90 jobs
 - **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 64 jobs
-- **jobicy**: 2 jobs
+- **remotive**: 72 jobs
+- **jobicy**: 3 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
