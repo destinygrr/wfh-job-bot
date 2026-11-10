@@ -1,14 +1,30 @@
-# WFH Job Bot — digest 10 Nov 2026, 08:07 AM
+# WFH Job Bot — digest 10 Nov 2026, 05:34 PM
 
-**0 new job(s)** matching AI-Testing / Teaching from 279 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 244 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 83/100 | Verification Specialist | Orbit Verify | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/verification-specialist-at-orbit-verify-4487492280) |
+
+## Ready-to-paste cover notes
+
+**1) Verification Specialist — Orbit Verify**
+```
+Dear Hiring Team,
+I am applying for the Verification Specialist role at Orbit Verify.
+I bring 20+ years of experience in documentation, KYC verification and compliance.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 120 jobs
+- **linkedin**: 90 jobs
 - **apna**: 212 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 64 jobs
-- **jobicy**: 3 jobs
+- **remotive**: 72 jobs
+- **jobicy**: 2 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
