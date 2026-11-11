@@ -1,18 +1,42 @@
-# WFH Job Bot — digest 10 Nov 2026, 05:34 PM
+# WFH Job Bot — digest 11 Nov 2026, 07:37 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 244 fetched.
+**3 new job(s)** matching AI-Testing / Teaching from 250 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Verification Specialist | Orbit Verify | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/verification-specialist-at-orbit-verify-4487492280) |
+| 1 | 93/100 | Online Tutor | Truestudez | Work From Home | ₹9k-13k/yr | Apna | [Apply](https://apna.co/job/delhi-ncr/online-tutor-330294549) |
+| 2 | 83/100 | AI Trainer - Bengali | Outlier | Tripura, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-trainer-bengali-at-outlier-4488664520) |
+| 3 | 83/100 | AI Trainer - Bengali | Outlier | India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-trainer-bengali-at-outlier-4488671416) |
 
 ## Ready-to-paste cover notes
 
-**1) Verification Specialist — Orbit Verify**
+**1) Online Tutor — Truestudez**
 ```
 Dear Hiring Team,
-I am applying for the Verification Specialist role at Orbit Verify.
-I bring 20+ years of experience in documentation, KYC verification and compliance.
+I am applying for the Online Tutor role at Truestudez.
+I bring 20+ years of experience in teaching, tutoring and mentoring students.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**2) AI Trainer - Bengali — Outlier**
+```
+Dear Hiring Team,
+I am applying for the AI Trainer - Bengali role at Outlier.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**3) AI Trainer - Bengali — Outlier**
+```
+Dear Hiring Team,
+I am applying for the AI Trainer - Bengali role at Outlier.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
@@ -20,11 +44,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 90 jobs
+- **linkedin**: 100 jobs
 - **apna**: 212 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 72 jobs
-- **jobicy**: 2 jobs
+- **jobicy**: 0 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
