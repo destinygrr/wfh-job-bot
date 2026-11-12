@@ -1,18 +1,18 @@
-# WFH Job Bot — digest 12 Nov 2026, 08:03 AM
+# WFH Job Bot — digest 12 Nov 2026, 05:59 PM
 
-**2 new job(s)** matching AI-Testing / Teaching from 256 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 331 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 100/100 | Verification Executive | Latitude Logistics Private Limited | Work From Home | ₹35k-55k/yr | Apna | [Apply](https://apna.co/job/aligarh-region/verification-executive-330748777) |
-| 2 | 83/100 | QuickBooks AI Trainer | Sourcebae | India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/quickbooks-ai-trainer-at-sourcebae-4490090918) |
+| 1 | 83/100 | Verification Specialist | Orbit Verify | Delhi, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/verification-specialist-at-orbit-verify-4488530025) |
+| 2 | 83/100 | Life Sciences: AI Trainer | Brunel | Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/life-sciences-ai-trainer-at-brunel-4467033168) |
 
 ## Ready-to-paste cover notes
 
-**1) Verification Executive — Latitude Logistics Private Limited**
+**1) Verification Specialist — Orbit Verify**
 ```
 Dear Hiring Team,
-I am applying for the Verification Executive role at Latitude Logistics Private Limited.
+I am applying for the Verification Specialist role at Orbit Verify.
 I bring 20+ years of experience in documentation, KYC verification and compliance.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -20,10 +20,10 @@ Regards,
 Gnyanneshwar Rao
 ```
 
-**2) QuickBooks AI Trainer — Sourcebae**
+**2) Life Sciences: AI Trainer — Brunel**
 ```
 Dear Hiring Team,
-I am applying for the QuickBooks AI Trainer role at Sourcebae.
+I am applying for the Life Sciences: AI Trainer role at Brunel.
 I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -32,11 +32,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 90 jobs
+- **linkedin**: 200 jobs
 - **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
-- **remotive**: 72 jobs
-- **jobicy**: 6 jobs
+- **remotive**: 64 jobs
+- **jobicy**: 5 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
