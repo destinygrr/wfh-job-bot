@@ -1,78 +1,30 @@
-# WFH Job Bot — digest 11 Nov 2026, 05:46 PM
+# WFH Job Bot — digest 12 Nov 2026, 08:03 AM
 
-**6 new job(s)** matching AI-Testing / Teaching from 244 fetched.
+**2 new job(s)** matching AI-Testing / Teaching from 256 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 93/100 | Equity Research - Vice President, Mining Research (Sydney) | Morgan Stanley | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/equity-research-vice-president-mining-research-sydney-at-morgan-stanley-4479951649) |
-| 2 | 93/100 | Equity Research – Analyst/Associate, Australia Non-Bank Financials Team (Sydney) | Morgan Stanley | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/equity-research-%E2%80%93-analyst-associate-australia-non-bank-financials-team-sydney-at-morgan-stanley-4472865587) |
-| 3 | 83/100 | Global Investment Research, Equity Research, Australia REITs, Senior Analyst – Sydney/Melbourne | Goldman Sachs | Melbourne, Victoria, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/global-investment-research-equity-research-australia-reits-senior-analyst-%E2%80%93-sydney-melbourne-at-goldman-sachs-4483637402) |
-| 4 | 83/100 | Equity Research Associate/Senior Associate, Diversified Financials | Jefferies | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/equity-research-associate-senior-associate-diversified-financials-at-jefferies-4480350787) |
-| 5 | 83/100 | Equity Research Associate | Jarden | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/equity-research-associate-at-jarden-4478859071) |
-| 6 | 83/100 | Equity Research (Insurance & Diversified Financials) - Associate/Vice President - Australia | JPMorganChase | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/equity-research-insurance-diversified-financials-associate-vice-president-australia-at-jpmorganchase-4476389077) |
+| 1 | 100/100 | Verification Executive | Latitude Logistics Private Limited | Work From Home | ₹35k-55k/yr | Apna | [Apply](https://apna.co/job/aligarh-region/verification-executive-330748777) |
+| 2 | 83/100 | QuickBooks AI Trainer | Sourcebae | India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/quickbooks-ai-trainer-at-sourcebae-4490090918) |
 
 ## Ready-to-paste cover notes
 
-**1) Equity Research - Vice President, Mining Research (Sydney) — Morgan Stanley**
+**1) Verification Executive — Latitude Logistics Private Limited**
 ```
 Dear Hiring Team,
-I am applying for the Equity Research - Vice President, Mining Research (Sydney) role at Morgan Stanley.
-I bring 20+ years of experience in remote collaboration, AI data work and analysis.
+I am applying for the Verification Executive role at Latitude Logistics Private Limited.
+I bring 20+ years of experience in documentation, KYC verification and compliance.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
-**2) Equity Research – Analyst/Associate, Australia Non-Bank Financials Team (Sydney) — Morgan Stanley**
+**2) QuickBooks AI Trainer — Sourcebae**
 ```
 Dear Hiring Team,
-I am applying for the Equity Research – Analyst/Associate, Australia Non-Bank Financials Team (Sydney) role at Morgan Stanley.
-I bring 20+ years of experience in remote collaboration, AI data work and analysis.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**3) Global Investment Research, Equity Research, Australia REITs, Senior Analyst – Sydney/Melbourne — Goldman Sachs**
-```
-Dear Hiring Team,
-I am applying for the Global Investment Research, Equity Research, Australia REITs, Senior Analyst – Sydney/Melbourne role at Goldman Sachs.
-I bring 20+ years of experience in remote collaboration, AI data work and analysis.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**4) Equity Research Associate/Senior Associate, Diversified Financials — Jefferies**
-```
-Dear Hiring Team,
-I am applying for the Equity Research Associate/Senior Associate, Diversified Financials role at Jefferies.
-I bring 20+ years of experience in remote collaboration, AI data work and analysis.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**5) Equity Research Associate — Jarden**
-```
-Dear Hiring Team,
-I am applying for the Equity Research Associate role at Jarden.
-I bring 20+ years of experience in remote collaboration, AI data work and analysis.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**6) Equity Research (Insurance & Diversified Financials) - Associate/Vice President - Australia — JPMorganChase**
-```
-Dear Hiring Team,
-I am applying for the Equity Research (Insurance & Diversified Financials) - Associate/Vice President - Australia role at JPMorganChase.
-I bring 20+ years of experience in remote collaboration, AI data work and analysis.
+I am applying for the QuickBooks AI Trainer role at Sourcebae.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
@@ -81,10 +33,10 @@ Gnyanneshwar Rao
 
 ## Source status
 - **linkedin**: 90 jobs
-- **apna**: 212 jobs
+- **apna**: 210 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 72 jobs
-- **jobicy**: 0 jobs
+- **jobicy**: 6 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
