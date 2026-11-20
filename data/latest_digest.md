@@ -1,30 +1,14 @@
-# WFH Job Bot — digest 19 Nov 2026, 06:55 PM
+# WFH Job Bot — digest 20 Nov 2026, 08:13 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 250 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 239 fetched.
 
-| # | Trust | Role | Company | Location | Pay | Source | Apply |
-|---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Purchase Executive | Ascend Powerpacks Pvt Ltd | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/purchase-executive-at-ascend-powerpacks-pvt-ltd-4492127724) |
-
-## Ready-to-paste cover notes
-
-**1) Purchase Executive — Ascend Powerpacks Pvt Ltd**
-```
-Dear Hiring Team,
-I am applying for the Purchase Executive role at Ascend Powerpacks Pvt Ltd.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
 
 ## Source status
-- **linkedin**: 90 jobs
-- **apna**: 208 jobs
+- **linkedin**: 70 jobs
+- **apna**: 207 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 3 jobs
+- **jobicy**: 4 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.

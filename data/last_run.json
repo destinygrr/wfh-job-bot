@@ -1,35 +1,35 @@
 {
-  "when": "2026-11-19T18:55:20+00:00",
+  "when": "2026-11-20T08:13:16+00:00",
   "sources": {
-    "linkedin": "90 jobs",
-    "apna": "208 jobs",
+    "linkedin": "70 jobs",
+    "apna": "207 jobs",
     "naukri": "blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi",
     "remotive": "56 jobs",
-    "jobicy": "3 jobs"
+    "jobicy": "4 jobs"
   },
-  "fetched": 349,
-  "unique": 250,
-  "new_matching": 1,
-  "alerted": 1,
+  "fetched": 330,
+  "unique": 239,
+  "new_matching": 0,
+  "alerted": 0,
   "below_threshold": 0,
   "too_old": 0,
-  "irrelevant": 12,
-  "onsite_dropped": 1,
+  "irrelevant": 13,
+  "onsite_dropped": 0,
   "blocklisted": 0,
-  "outside_city": 31,
+  "outside_city": 32,
   "auth_blocked": 0,
   "queued_next": 0,
-  "matched_role": 72,
-  "total_seen": 2518,
-  "elapsed": 50.86910796165466,
+  "matched_role": 61,
+  "total_seen": 2531,
+  "elapsed": 46.475446462631226,
   "notify": {
-    "whatsapp_greenapi": "OK \u2014 3EB0814A41AF8CF7BFD7CF (via 7107.api.green-api.com)",
+    "whatsapp_greenapi": "OK \u2014 3EB005A7D78437E753034A (via 7107.api.green-api.com)",
     "telegram": "SKIP \u2014 skipped (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set)",
     "ntfy": "SKIP \u2014 skipped (NTFY_TOPIC not set)"
   },
-  "gmail": "5 new job email(s)",
+  "gmail": "8 new job email(s)",
   "gmail_notify": {
-    "whatsapp_greenapi": "OK \u2014 3EB08573361B1D83C3DD20 (via 7107.api.green-api.com)",
+    "whatsapp_greenapi": "OK \u2014 3EB071ECBA8D83DC91F4CF (via 7107.api.green-api.com)",
     "telegram": "SKIP \u2014 skipped (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set)",
     "ntfy": "SKIP \u2014 skipped (NTFY_TOPIC not set)"
   }
