@@ -1,17 +1,19 @@
-# WFH Job Bot — digest 21 Nov 2026, 05:12 PM
+# WFH Job Bot — digest 22 Nov 2026, 07:52 AM
 
-**1 new job(s)** matching AI-Testing / Teaching from 266 fetched.
+**3 new job(s)** matching AI-Testing / Teaching from 321 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 99/100 | Online Tutor | Learners Acadmia | Work From Home | - | Apna | [Apply](https://apna.co/job/bengaluru-bangalore-region/online-tutor-324435830) |
+| 1 | 93/100 | Online Tutor | Learners Academia | Work From Home | - | Apna | [Apply](https://apna.co/job/bengaluru-bangalore-region/online-tutor-833511939) |
+| 2 | 91/100 | Software QA/QC Engineer – Automation Testing | TXM Solutions | Dubai, United Arab Emirates | - | LinkedIn | [Apply](https://ae.linkedin.com/jobs/view/software-qa-qc-engineer-%E2%80%93-automation-testing-at-txm-solutions-4487111979) |
+| 3 | 75/100 | Purchase Executive | Perceptyne | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/purchase-executive-at-perceptyne-4484816761) |
 
 ## Ready-to-paste cover notes
 
-**1) Online Tutor — Learners Acadmia**
+**1) Online Tutor — Learners Academia**
 ```
 Dear Hiring Team,
-I am applying for the Online Tutor role at Learners Acadmia.
+I am applying for the Online Tutor role at Learners Academia.
 I bring 20+ years of experience in teaching, tutoring and mentoring students.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -19,12 +21,34 @@ Regards,
 Gnyanneshwar Rao
 ```
 
+**2) Software QA/QC Engineer – Automation Testing — TXM Solutions**
+```
+Dear Hiring Team,
+I am applying for the Software QA/QC Engineer – Automation Testing role at TXM Solutions.
+I bring 20+ years of experience in remote collaboration, AI data work and analysis.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**3) Purchase Executive — Perceptyne**
+```
+Dear Hiring Team,
+I am applying for the Purchase Executive role at Perceptyne.
+I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
+I am based in Hyderabad and available for an in-person interview.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
 ## Source status
-- **linkedin**: 100 jobs
-- **apna**: 210 jobs
+- **linkedin**: 160 jobs
+- **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 5 jobs
+- **jobicy**: 6 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
