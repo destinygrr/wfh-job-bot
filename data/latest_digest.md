@@ -1,14 +1,30 @@
-# WFH Job Bot — digest 22 Nov 2026, 05:41 PM
+# WFH Job Bot — digest 23 Nov 2026, 08:43 AM
 
-**0 new job(s)** matching AI-Testing / Teaching from 267 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 247 fetched.
 
+| # | Trust | Role | Company | Location | Pay | Source | Apply |
+|---|-------|------|---------|----------|-----|--------|-------|
+| 1 | 83/100 | AI Trainer | Get Set Learn | Madhya Pradesh, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/ai-trainer-at-get-set-learn-4492374844) |
+
+## Ready-to-paste cover notes
+
+**1) AI Trainer — Get Set Learn**
+```
+Dear Hiring Team,
+I am applying for the AI Trainer role at Get Set Learn.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 80 jobs
 - **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 56 jobs
-- **jobicy**: 5 jobs
+- **jobicy**: 6 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
