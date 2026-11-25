@@ -1,29 +1,17 @@
-# WFH Job Bot — digest 24 Nov 2026, 10:57 PM
+# WFH Job Bot — digest 25 Nov 2026, 09:40 AM
 
-**2 new job(s)** matching AI-Testing / Teaching from 259 fetched.
+**1 new job(s)** matching AI-Testing / Teaching from 266 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 83/100 | Education Verification Specialist (Background Verification) | Helloverify | Noida, Uttar Pradesh, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/education-verification-specialist-background-verification-at-helloverify-4493010060) |
-| 2 | 83/100 | AI Data Trainer - Dutch and English, Artificial General Intelligence - Studentjob.nl | Jobster | The Hague, South Holland, Netherlands | - | LinkedIn | [Apply](https://nl.linkedin.com/jobs/view/ai-data-trainer-dutch-and-english-artificial-general-intelligence-studentjob-nl-at-jobster-4494350179) |
+| 1 | 83/100 | AI trainer/AI Data Annotator | NLB Services | United Kingdom | - | LinkedIn | [Apply](https://uk.linkedin.com/jobs/view/ai-trainer-ai-data-annotator-at-nlb-services-4494340172) |
 
 ## Ready-to-paste cover notes
 
-**1) Education Verification Specialist (Background Verification) — Helloverify**
+**1) AI trainer/AI Data Annotator — NLB Services**
 ```
 Dear Hiring Team,
-I am applying for the Education Verification Specialist (Background Verification) role at Helloverify.
-I bring 20+ years of experience in documentation, KYC verification and compliance.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**2) AI Data Trainer - Dutch and English, Artificial General Intelligence - Studentjob.nl — Jobster**
-```
-Dear Hiring Team,
-I am applying for the AI Data Trainer - Dutch and English, Artificial General Intelligence - Studentjob.nl role at Jobster.
+I am applying for the AI trainer/AI Data Annotator role at NLB Services.
 I bring 20+ years of experience in software testing, QA and AI model evaluation.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
@@ -32,11 +20,11 @@ Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 100 jobs
-- **apna**: 211 jobs
+- **linkedin**: 80 jobs
+- **apna**: 212 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
-- **jobicy**: 3 jobs
+- **jobicy**: 18 jobs
 
 ## Safety checklist before you apply
 - A genuine employer NEVER asks for a registration fee, security deposit, training fee or 'kit' money. Any request = scam, stop immediately.
