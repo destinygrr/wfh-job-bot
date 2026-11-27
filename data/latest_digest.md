@@ -1,50 +1,10 @@
-# WFH Job Bot — digest 27 Nov 2026, 09:31 AM
+# WFH Job Bot — digest 27 Nov 2026, 07:24 PM
 
-**3 new job(s)** matching AI-Testing / Teaching from 257 fetched.
+**0 new job(s)** matching AI-Testing / Teaching from 221 fetched.
 
-| # | Trust | Role | Company | Location | Pay | Source | Apply |
-|---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 93/100 | Sr.Analyst- Global Derivatives Operations Centre | Louis Dreyfus Company | Gurgaon, Haryana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/sr-analyst-global-derivatives-operations-centre-at-louis-dreyfus-company-4493866595) |
-| 2 | 93/100 | Sr.Analyst- Global Derivatives Operations Centre | Valley Medical Center & Clinics | Gurgaon, Haryana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/sr-analyst-global-derivatives-operations-centre-at-valley-medical-center-clinics-4495573525) |
-| 3 | 83/100 | Technical Trainer (Data Engineering & AI) | FDM Group | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/technical-trainer-data-engineering-ai-at-fdm-group-4486923850) |
-
-## Ready-to-paste cover notes
-
-**1) Sr.Analyst- Global Derivatives Operations Centre — Louis Dreyfus Company**
-```
-Dear Hiring Team,
-I am applying for the Sr.Analyst- Global Derivatives Operations Centre role at Louis Dreyfus Company.
-I bring 20+ years of experience in equity research, financial analysis and derivatives.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**2) Sr.Analyst- Global Derivatives Operations Centre — Valley Medical Center & Clinics**
-```
-Dear Hiring Team,
-I am applying for the Sr.Analyst- Global Derivatives Operations Centre role at Valley Medical Center & Clinics.
-I bring 20+ years of experience in equity research, financial analysis and derivatives.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**3) Technical Trainer (Data Engineering & AI) — FDM Group**
-```
-Dear Hiring Team,
-I am applying for the Technical Trainer (Data Engineering & AI) role at FDM Group.
-I bring 20+ years of experience in software testing, QA and AI model evaluation.
-I am fully set up to work from home with a stable internet connection.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
 
 ## Source status
-- **linkedin**: 100 jobs
+- **linkedin**: 50 jobs
 - **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
