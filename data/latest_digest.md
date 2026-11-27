@@ -1,51 +1,51 @@
-# WFH Job Bot — digest 26 Nov 2026, 07:28 PM
+# WFH Job Bot — digest 27 Nov 2026, 09:31 AM
 
-**3 new job(s)** matching AI-Testing / Teaching from 238 fetched.
+**3 new job(s)** matching AI-Testing / Teaching from 257 fetched.
 
 | # | Trust | Role | Company | Location | Pay | Source | Apply |
 |---|-------|------|---------|----------|-----|--------|-------|
-| 1 | 85/100 | TL-Procurement | Cognizant | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/tl-procurement-at-cognizant-4495008659) |
-| 2 | 83/100 | ONLINE TUTOR | Private Online Tutor | Erode, Tamil Nadu, India | - | LinkedIn | [Apply](https://www.linkedin.com/jobs/view/4493451231) |
-| 3 | 75/100 | Procurement Specialist | Qnity | Hyderabad, Telangana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/procurement-specialist-at-qnity-4495527006) |
+| 1 | 93/100 | Sr.Analyst- Global Derivatives Operations Centre | Louis Dreyfus Company | Gurgaon, Haryana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/sr-analyst-global-derivatives-operations-centre-at-louis-dreyfus-company-4493866595) |
+| 2 | 93/100 | Sr.Analyst- Global Derivatives Operations Centre | Valley Medical Center & Clinics | Gurgaon, Haryana, India | - | LinkedIn | [Apply](https://in.linkedin.com/jobs/view/sr-analyst-global-derivatives-operations-centre-at-valley-medical-center-clinics-4495573525) |
+| 3 | 83/100 | Technical Trainer (Data Engineering & AI) | FDM Group | Sydney, New South Wales, Australia | - | LinkedIn | [Apply](https://au.linkedin.com/jobs/view/technical-trainer-data-engineering-ai-at-fdm-group-4486923850) |
 
 ## Ready-to-paste cover notes
 
-**1) TL-Procurement — Cognizant**
+**1) Sr.Analyst- Global Derivatives Operations Centre — Louis Dreyfus Company**
 ```
 Dear Hiring Team,
-I am applying for the TL-Procurement role at Cognizant.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
-I can join immediately and would be glad to discuss how I can contribute.
-Regards,
-Gnyanneshwar Rao
-```
-
-**2) ONLINE TUTOR — Private Online Tutor**
-```
-Dear Hiring Team,
-I am applying for the ONLINE TUTOR role at Private Online Tutor.
-I bring 20+ years of experience in teaching, tutoring and mentoring students.
+I am applying for the Sr.Analyst- Global Derivatives Operations Centre role at Louis Dreyfus Company.
+I bring 20+ years of experience in equity research, financial analysis and derivatives.
 I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
-**3) Procurement Specialist — Qnity**
+**2) Sr.Analyst- Global Derivatives Operations Centre — Valley Medical Center & Clinics**
 ```
 Dear Hiring Team,
-I am applying for the Procurement Specialist role at Qnity.
-I bring 20+ years of experience in procurement, supply chain, sourcing and operations.
-I am based in Hyderabad and available for an in-person interview.
+I am applying for the Sr.Analyst- Global Derivatives Operations Centre role at Valley Medical Center & Clinics.
+I bring 20+ years of experience in equity research, financial analysis and derivatives.
+I am fully set up to work from home with a stable internet connection.
+I can join immediately and would be glad to discuss how I can contribute.
+Regards,
+Gnyanneshwar Rao
+```
+
+**3) Technical Trainer (Data Engineering & AI) — FDM Group**
+```
+Dear Hiring Team,
+I am applying for the Technical Trainer (Data Engineering & AI) role at FDM Group.
+I bring 20+ years of experience in software testing, QA and AI model evaluation.
+I am fully set up to work from home with a stable internet connection.
 I can join immediately and would be glad to discuss how I can contribute.
 Regards,
 Gnyanneshwar Rao
 ```
 
 ## Source status
-- **linkedin**: 80 jobs
-- **apna**: 210 jobs
+- **linkedin**: 100 jobs
+- **apna**: 211 jobs
 - **naukri**: blocked by Naukri (captcha) - this is normal from cloud/office IPs; it works when run from your home Wi-Fi
 - **remotive**: 48 jobs
 - **jobicy**: 0 jobs
